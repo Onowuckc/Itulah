@@ -78,9 +78,8 @@ export default function ContactPage() {
               Office Address
             </h3>
             <div className={styles.blockText}>
-              <p>Plot 12, Mikado House,</p>
-              <p>Adeola Hopewell Street,</p>
-              <p>Victoria Island, Lagos, Nigeria.</p>
+              <p>Plot 4 block 11 prince adesoji ajose street,</p>
+              <p>Ogudu phase 2, Lagos, Nigeria.</p>
             </div>
           </div>
 
@@ -92,8 +91,8 @@ export default function ContactPage() {
               Phone Numbers
             </h3>
             <div className={styles.blockText}>
-              <p>+234 1 234 5678</p>
-              <p>+234 803 123 4567</p>
+              <p>+234 807 963 5408</p>
+              <p>+234 812 449 1283</p>
             </div>
           </div>
 

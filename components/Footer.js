@@ -74,11 +74,11 @@ export default function Footer() {
           <ul className={styles.contactList}>
             <li>
               <span className={styles.contactLabel}>Address:</span>
-              <p className={styles.contactValue}>Plot 12, Mikado House, Adeola Hopewell Street, Victoria Island, Lagos, Nigeria.</p>
+              <p className={styles.contactValue}>Plot 4 block 11 prince adesoji ajose street ogudu phase 2</p>
             </li>
             <li>
               <span className={styles.contactLabel}>Phone:</span>
-              <p className={styles.contactValue}>+234 1 234 5678<br />+234 803 123 4567</p>
+              <p className={styles.contactValue}>+234 807 963 5408<br />+234 812 449 1283</p>
             </li>
             <li>
               <span className={styles.contactLabel}>Email:</span>

@@ -97,7 +97,7 @@ export default function RootLayout({ children }) {
         "description": "Leading Nigerian enterprise specializing in electronic security, CCTV installation in Nigeria, Wild Octopus Liqueur distribution, PABX systems, and fine fragrances.",
         "contactPoint": {
           "@type": "ContactPoint",
-          "telephone": "+234-1-234-5678",
+          "telephone": "+234-807-963-5408",
           "contactType": "customer service",
           "areaServed": "NG",
           "availableLanguage": "English"
@@ -110,11 +110,12 @@ export default function RootLayout({ children }) {
         "image": "https://itulah.com.ng/img/cctv.png",
         "address": {
           "@type": "PostalAddress",
+          "streetAddress": "Plot 4 block 11 prince adesoji ajose street ogudu phase 2",
           "addressLocality": "Lagos",
           "addressCountry": "NG"
         },
         "priceRange": "₦₦₦",
-        "telephone": "+234-1-234-5678"
+        "telephone": "+234-807-963-5408"
       },
       {
         "@type": "WebSite",

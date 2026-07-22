@@ -87,7 +87,7 @@ export default function GalleryPage() {
     e.stopPropagation();
     // In a real application, this triggers download. 
     // Here we will generate a download of a dynamic small text file named after the PDF to simulate the brochure delivery!
-    const content = `Itulah Nigeria Limited Brochure\n\nTitle: ${item.title}\nCategory: ${item.category}\nDescription: ${item.description}\n\nFor more details, contact info@itulah.com.ng or call +234 1 234 5678.`;
+    const content = `Itulah Nigeria Limited Brochure\n\nTitle: ${item.title}\nCategory: ${item.category}\nDescription: ${item.description}\n\nFor more details, contact Info@itulahng.com or call +234 807 963 5408, +234 812 449 1283.`;
     const blob = new Blob([content], { type: 'text/plain' });
     const url = URL.createObjectURL(blob);
     const link = document.createElement('a');

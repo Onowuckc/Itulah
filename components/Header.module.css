@@ -50,10 +50,10 @@
   font-weight: 800;
   font-size: 26px;
   letter-spacing: 3px;
-  background: linear-gradient(135deg, #ffffff 0%, #00f0ff 50%, var(--color-accent) 100%);
+  background: linear-gradient(135deg, #ffffff 0%, #1d4ed8 50%, #dc2626 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-shadow: 0 0 20px rgba(0, 240, 255, 0.3);
+  text-shadow: 0 0 20px rgba(220, 38, 38, 0.3);
 }
 
 .logoImage[style*="display: none"] + .logoFallback {
@@ -77,8 +77,8 @@
 }
 
 .navLink:hover {
-  color: var(--color-accent);
-  text-shadow: 0 0 10px rgba(251, 191, 36, 0.5);
+  color: #ef4444;
+  text-shadow: 0 0 10px rgba(239, 68, 68, 0.5);
 }
 
 .navLink::after {
@@ -88,8 +88,8 @@
   left: 0;
   width: 0;
   height: 2px;
-  background: linear-gradient(90deg, #00f0ff, var(--color-accent));
-  box-shadow: 0 0 10px rgba(0, 240, 255, 0.6);
+  background: linear-gradient(90deg, #1d4ed8, #dc2626);
+  box-shadow: 0 0 10px rgba(220, 38, 38, 0.6);
   transition: var(--transition);
 }
 
@@ -98,8 +98,8 @@
 }
 
 .active {
-  color: var(--color-accent) !important;
-  text-shadow: 0 0 12px rgba(251, 191, 36, 0.6);
+  color: #ef4444 !important;
+  text-shadow: 0 0 12px rgba(239, 68, 68, 0.6);
 }
 
 .active::after {
@@ -112,19 +112,19 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #0f172a;
-  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+  color: #ffffff;
+  background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
   padding: 10px 24px;
   border-radius: 30px;
-  box-shadow: 0 0 20px rgba(251, 191, 36, 0.4);
+  box-shadow: 0 0 20px rgba(220, 38, 38, 0.4);
   transition: var(--transition);
 }
 
 .quoteButton:hover {
-  background: linear-gradient(135deg, #00f0ff 0%, #3b82f6 100%);
+  background: linear-gradient(135deg, #1d4ed8 0%, #1e3a8a 100%);
   color: #ffffff;
   transform: translateY(-2px);
-  box-shadow: 0 0 25px rgba(0, 240, 255, 0.6);
+  box-shadow: 0 0 25px rgba(29, 78, 216, 0.6);
 }
 
 /* Menu Toggle Button */
