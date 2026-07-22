@@ -1,0 +1,202 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 24px 100px;
+}
+
+.titleSection {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: 48px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.subtitle {
+  color: var(--color-text-muted-light);
+  font-size: 18px;
+}
+
+/* Category Grid */
+.categoryGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background: rgba(15, 23, 42, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(25px);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: var(--transition);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  border-color: var(--color-accent);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.8), 0 0 25px rgba(251, 191, 36, 0.25);
+}
+
+.imageWrapper {
+  position: relative;
+  height: 250px;
+  background: rgba(8, 12, 20, 0.8);
+  cursor: pointer;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.cardBg {
+  transition: transform 0.6s ease;
+}
+
+.card:hover .cardBg {
+  transform: scale(1.08);
+}
+
+.cardBody {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.cardTitle {
+  font-family: var(--font-ui);
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.cardDesc {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--color-text-muted-dark);
+  margin-bottom: 24px;
+  flex-grow: 1;
+}
+
+.btnGroup {
+  display: flex;
+  gap: 15px;
+}
+
+.previewBtn {
+  font-family: var(--font-ui);
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #0f172a;
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+  padding: 10px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  border: none;
+  flex: 1;
+  text-align: center;
+  transition: var(--transition);
+  box-shadow: 0 0 15px rgba(251, 191, 36, 0.3);
+}
+
+.previewBtn:hover {
+  background: linear-gradient(135deg, #00f0ff 0%, #3b82f6 100%);
+  color: #ffffff;
+  box-shadow: 0 0 20px rgba(0, 240, 255, 0.5);
+}
+
+.downloadBtn {
+  font-family: var(--font-ui);
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 10px 16px;
+  border-radius: 20px;
+  flex: 1;
+  text-align: center;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.downloadBtn:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* Lightbox Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(8, 12, 20, 0.95);
+  backdrop-filter: blur(20px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  animation: fadeIn 0.3s ease;
+}
+
+.modalContent {
+  position: relative;
+  max-width: 90%;
+  max-height: 80%;
+  background: rgba(15, 23, 42, 0.9);
+  padding: 24px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.9);
+}
+
+.modalImage {
+  border-radius: 8px;
+  object-fit: contain;
+}
+
+.closeBtn {
+  position: absolute;
+  top: -45px;
+  right: 0;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 36px;
+  cursor: pointer;
+}
+
+.caption {
+  margin-top: 15px;
+  text-align: center;
+  color: var(--color-accent);
+  font-family: var(--font-ui);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@media (max-width: 768px) {
+  .btnGroup {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

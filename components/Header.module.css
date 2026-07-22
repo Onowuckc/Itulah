@@ -1,0 +1,314 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+  transition: var(--transition);
+  background: rgba(8, 12, 20, 0.7);
+  backdrop-filter: blur(20px) saturate(180%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.scrolled {
+  height: 70px;
+  background: rgba(15, 23, 42, 0.92);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.7), 0 0 20px rgba(0, 240, 255, 0.15);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logoLink {
+  display: flex;
+  align-items: center;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.logoImage {
+  object-fit: contain;
+}
+
+.logoFallback {
+  font-family: var(--font-ui);
+  font-weight: 800;
+  font-size: 26px;
+  letter-spacing: 3px;
+  background: linear-gradient(135deg, #ffffff 0%, #00f0ff 50%, var(--color-accent) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 20px rgba(0, 240, 255, 0.3);
+}
+
+.logoImage[style*="display: none"] + .logoFallback {
+  display: inline-block;
+}
+
+.desktopNav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.navLink {
+  font-family: var(--font-ui);
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: var(--color-text-muted-light);
+  position: relative;
+  padding: 6px 0;
+}
+
+.navLink:hover {
+  color: var(--color-accent);
+  text-shadow: 0 0 10px rgba(251, 191, 36, 0.5);
+}
+
+.navLink::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #00f0ff, var(--color-accent));
+  box-shadow: 0 0 10px rgba(0, 240, 255, 0.6);
+  transition: var(--transition);
+}
+
+.navLink:hover::after {
+  width: 100%;
+}
+
+.active {
+  color: var(--color-accent) !important;
+  text-shadow: 0 0 12px rgba(251, 191, 36, 0.6);
+}
+
+.active::after {
+  width: 100% !important;
+}
+
+.quoteButton {
+  font-family: var(--font-ui);
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #0f172a;
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+  padding: 10px 24px;
+  border-radius: 30px;
+  box-shadow: 0 0 20px rgba(251, 191, 36, 0.4);
+  transition: var(--transition);
+}
+
+.quoteButton:hover {
+  background: linear-gradient(135deg, #00f0ff 0%, #3b82f6 100%);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 0 25px rgba(0, 240, 255, 0.6);
+}
+
+/* Menu Toggle Button */
+.menuToggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 28px;
+  height: 20px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 1001;
+  padding: 0;
+}
+
+.bar {
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-text-dark);
+  transition: var(--transition);
+  transform-origin: left center;
+}
+
+.menuOpen .bar:nth-child(1) {
+  transform: rotate(45deg) translate(2px, 0px);
+  background-color: var(--color-accent);
+}
+
+.menuOpen .bar:nth-child(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+.menuOpen .bar:nth-child(3) {
+  transform: rotate(-45deg) translate(2px, 0px);
+  background-color: var(--color-accent);
+}
+
+/* Mobile Nav Drawer */
+.mobileNav {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 320px;
+  height: 100vh;
+  background: rgba(15, 23, 42, 0.95);
+  backdrop-filter: blur(25px);
+  border-left: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: -15px 0 40px rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  padding: 100px 40px 40px;
+  transition: var(--transition);
+  z-index: 999;
+}
+
+.mobileNavOpen {
+  right: 0;
+}
+
+.mobileNavLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.mobileNavLink {
+  font-family: var(--font-ui);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-text-muted-light);
+}
+
+.mobileNavLink:hover {
+  color: var(--color-accent);
+  padding-left: 8px;
+}
+
+.mobileQuoteButton {
+  margin-top: 20px;
+  font-family: var(--font-ui);
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #0f172a;
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+  padding: 14px 0;
+  border-radius: 30px;
+  box-shadow: 0 0 20px rgba(251, 191, 36, 0.4);
+}
+
+@media (max-width: 900px) {
+  .desktopNav {
+    display: none;
+  }
+  .menuToggle {
+    display: flex;
+  }
+}
+
+/* Cart Header Button */
+.cartHeaderBtn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.cartHeaderBtn:hover {
+  background: rgba(0, 240, 255, 0.15);
+  border-color: #00f0ff;
+  color: #00f0ff;
+}
+
+.cartBadge {
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+  color: white;
+  font-size: 11px;
+  font-weight: 800;
+  padding: 2px 7px;
+  border-radius: 10px;
+  margin-left: 2px;
+}
+
+.userAccountLink {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--color-text-muted-light);
+  font-size: 14px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.2s;
+}
+
+.userAccountLink:hover {
+  color: #00f0ff;
+  border-color: #00f0ff;
+}
+
+.loginLink {
+  color: var(--color-text-muted-light);
+  font-size: 14px;
+  font-weight: 600;
+  padding: 6px 12px;
+}
+
+.loginLink:hover {
+  color: var(--color-accent);
+}
+
+.mobileRightActions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.mobileCartBtn {
+  display: none;
+  background: none;
+  border: none;
+  color: #ffffff;
+  position: relative;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .mobileCartBtn {
+    display: block;
+  }
+}
+

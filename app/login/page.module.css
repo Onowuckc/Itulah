@@ -1,0 +1,141 @@
+.container {
+  min-height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 24px;
+}
+
+.loading {
+  text-align: center;
+  padding: 100px 0;
+  color: #94a3b8;
+}
+
+.card {
+  width: 100%;
+  max-width: 440px;
+  background: rgba(15, 23, 42, 0.88);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(25px);
+  padding: 40px 32px;
+  border-radius: 20px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6);
+}
+
+.icon {
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+.subtitle {
+  color: var(--color-text-muted-light);
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.noticeAlert {
+  background: rgba(2, 132, 199, 0.2);
+  border: 1px solid #0284c7;
+  color: #38bdf8;
+  padding: 12px 16px;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.errorAlert {
+  background: rgba(239, 68, 68, 0.2);
+  border: 1px solid #ef4444;
+  color: #fca5a5;
+  padding: 12px 16px;
+  border-radius: 10px;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.field label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #cbd5e1;
+}
+
+.field input {
+  background: rgba(8, 12, 20, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  padding: 12px 16px;
+  color: #ffffff;
+  font-size: 15px;
+}
+
+.field input:focus {
+  outline: none;
+  border-color: #00f0ff;
+  box-shadow: 0 0 12px rgba(0, 240, 255, 0.3);
+}
+
+.submitBtn, .btn {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 4px 16px rgba(2, 132, 199, 0.3);
+  margin-top: 8px;
+  transition: transform 0.2s;
+}
+
+.submitBtn:hover, .btn:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #38bdf8 0%, #0284c7 100%);
+}
+
+.footerLink {
+  margin-top: 24px;
+  text-align: center;
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+.footerLink a {
+  color: #00f0ff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.footerLink a:hover {
+  text-decoration: underline;
+}
