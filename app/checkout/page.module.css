@@ -201,20 +201,20 @@
   width: 100%;
   margin-top: 24px;
   padding: 16px;
-  background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+  background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
   color: white;
   font-size: 16px;
   font-weight: 700;
   border: none;
   border-radius: 12px;
   cursor: pointer;
-  box-shadow: 0 8px 24px rgba(2, 132, 199, 0.4);
+  box-shadow: 0 8px 24px rgba(220, 38, 38, 0.4);
   transition: transform 0.2s;
 }
 
 .submitOrderBtn:hover {
   transform: translateY(-2px);
-  background: linear-gradient(135deg, #38bdf8 0%, #0284c7 100%);
+  background: linear-gradient(135deg, #1d4ed8 0%, #1e3a8a 100%);
 }
 
 .submitOrderBtn:disabled {
@@ -272,7 +272,7 @@
   position: absolute;
   top: -6px;
   right: -6px;
-  background: #0284c7;
+  background: #dc2626;
   color: white;
   font-size: 11px;
   font-weight: 800;
@@ -302,7 +302,7 @@
 .summaryItemTotal {
   font-size: 14px;
   font-weight: 700;
-  color: #fbbf24;
+  color: #ef4444;
 }
 
 .calculationSection {
@@ -330,7 +330,7 @@
 }
 
 .grandTotalValue {
-  color: #00f0ff;
+  color: #ef4444;
   font-size: 22px;
   font-weight: 800;
 }
@@ -392,7 +392,7 @@
   font-size: 24px;
   font-weight: 800;
   letter-spacing: 2px;
-  color: #00f0ff;
+  color: #ef4444;
 }
 
 .invoiceSummary {
@@ -419,7 +419,7 @@
 }
 
 .totalRow span:last-child {
-  color: #fbbf24;
+  color: #ef4444;
   font-size: 18px;
   font-weight: 800;
 }
@@ -438,7 +438,7 @@
 
 .primaryBtn {
   padding: 14px 24px;
-  background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+  background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
   color: white;
   font-weight: 700;
   border-radius: 12px;

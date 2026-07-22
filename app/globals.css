@@ -164,37 +164,37 @@ button, input, select, textarea {
 
 /* Neon Glow & Text Classes */
 .cyber-glow-blue {
-  box-shadow: 0 0 30px rgba(0, 240, 255, 0.35);
+  box-shadow: 0 0 30px rgba(29, 78, 216, 0.35);
 }
 
-.cyber-glow-gold {
-  box-shadow: 0 0 30px rgba(251, 191, 36, 0.35);
+.cyber-glow-red {
+  box-shadow: 0 0 30px rgba(220, 38, 38, 0.35);
 }
 
-.neon-text-gold {
-  color: #fbbf24;
-  text-shadow: 0 0 16px rgba(251, 191, 36, 0.6);
+.neon-text-red {
+  color: #ef4444;
+  text-shadow: 0 0 16px rgba(239, 68, 68, 0.6);
 }
 
-.neon-text-cyan {
-  color: #00f0ff;
-  text-shadow: 0 0 16px rgba(0, 240, 255, 0.6);
+.neon-text-blue {
+  color: #3b82f6;
+  text-shadow: 0 0 16px rgba(59, 130, 246, 0.6);
 }
 
-.gradient-text-gold {
-  background: linear-gradient(135deg, #fff 0%, #fbbf24 60%, #f59e0b 100%);
+.gradient-text-red {
+  background: linear-gradient(135deg, #fff 0%, #ef4444 60%, #dc2626 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.gradient-text-cyan {
-  background: linear-gradient(135deg, #fff 0%, #00f0ff 60%, #3b82f6 100%);
+.gradient-text-blue {
+  background: linear-gradient(135deg, #fff 0%, #3b82f6 60%, #1d4ed8 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .gradient-text-multi {
-  background: linear-gradient(135deg, #00f0ff 0%, #fbbf24 50%, #a855f7 100%);
+  background: linear-gradient(135deg, #3b82f6 0%, #ef4444 50%, #1e3a8a 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

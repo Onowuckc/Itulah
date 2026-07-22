@@ -55,8 +55,8 @@
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background-color: var(--color-accent);
-  box-shadow: 0 0 10px var(--color-accent);
+  background-color: #ef4444;
+  box-shadow: 0 0 10px #ef4444;
   animation: pulseGlow 2s infinite;
 }
 
@@ -72,10 +72,10 @@
 }
 
 .titleHighlight {
-  background: linear-gradient(135deg, #00f0ff 0%, #fbbf24 60%, #a855f7 100%);
+  background: linear-gradient(135deg, #ffffff 0%, #3b82f6 50%, #ef4444 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  filter: drop-shadow(0 0 25px rgba(0, 240, 255, 0.3));
+  filter: drop-shadow(0 0 25px rgba(239, 68, 68, 0.35));
 }
 
 .description {
@@ -99,19 +99,19 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1.5px;
-  color: #0f172a;
-  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+  color: #ffffff;
+  background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
   padding: 16px 36px;
   border-radius: 30px;
-  box-shadow: 0 0 25px rgba(251, 191, 36, 0.4);
+  box-shadow: 0 0 25px rgba(220, 38, 38, 0.4);
   transition: var(--transition);
 }
 
 .primaryCta:hover {
-  background: linear-gradient(135deg, #00f0ff 0%, #3b82f6 100%);
+  background: linear-gradient(135deg, #1d4ed8 0%, #1e3a8a 100%);
   color: #ffffff;
   transform: translateY(-3px);
-  box-shadow: 0 0 35px rgba(0, 240, 255, 0.7);
+  box-shadow: 0 0 35px rgba(29, 78, 216, 0.7);
 }
 
 .secondaryCta {
@@ -131,10 +131,10 @@
 
 .secondaryCta:hover {
   background: rgba(255, 255, 255, 0.15);
-  border-color: var(--color-accent);
-  color: var(--color-accent);
+  border-color: #ef4444;
+  color: #ef4444;
   transform: translateY(-3px);
-  box-shadow: 0 0 25px rgba(251, 191, 36, 0.3);
+  box-shadow: 0 0 25px rgba(239, 68, 68, 0.3);
 }
 
 /* Quick Hero Pills Bar for Background Switching */
@@ -172,9 +172,9 @@
 }
 
 .bgPillBtn:hover {
-  border-color: #00f0ff;
-  color: #00f0ff;
-  box-shadow: 0 0 15px rgba(0, 240, 255, 0.3);
+  border-color: #3b82f6;
+  color: #3b82f6;
+  box-shadow: 0 0 15px rgba(59, 130, 246, 0.3);
   transform: translateY(-2px);
 }
 
