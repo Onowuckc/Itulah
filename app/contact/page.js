@@ -194,12 +194,12 @@ export default function ContactPage() {
       {/* Google Map Section */}
       <div className={styles.mapBlock}>
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.729107936173!2d3.4243553!3d6.4281352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf53102377b73%3A0xb35a3951cd557457!2sAdeola%20Hopewell%20St%2C%20Victoria%20Island%2C%20Lagos!5e0!3m2!1sen!2sng!4v1700000000000!5m2!1sen!2sng"
+          src="https://maps.google.com/maps?q=Prince%20Adesoji%20Ajose%20Street%2C%20Ogudu%20Phase%202%2C%20Lagos%2C%20Nigeria&t=&z=16&ie=UTF8&iwloc=&output=embed"
           className={styles.mapFrame}
           allowFullScreen=""
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
-          title="Itulah Nigeria Limited Office Location"
+          title="Itulah Nigeria Limited Office Location - Ogudu Phase 2"
         />
       </div>
     </div>
