@@ -1,6 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  /* config options here */
+  serverExternalPackages: ['better-sqlite3'],
+  outputFileTracingIncludes: {
+    '/api/**/*': ['./database.sqlite'],
+    '/**/*': ['./database.sqlite'],
+  },
 };
 
 export default nextConfig;

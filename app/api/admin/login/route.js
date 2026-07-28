@@ -5,12 +5,18 @@ export const dynamic = 'force-dynamic';
 
 export async function POST(req) {
   try {
-    const { password } = await req.json();
+    let password = '';
+    try {
+      const body = await req.json();
+      password = body?.password || '';
+    } catch (e) {
+      return NextResponse.json({ error: 'Invalid request body' }, { status: 400 });
+    }
 
     let expectedPassword = process.env.ADMIN_PASSWORD || 'itulahadmin2026';
     try {
       const dbPasswordSetting = db.prepare('SELECT value FROM settings WHERE key = ?').get('adminPassword');
-      if (dbPasswordSetting) {
+      if (dbPasswordSetting && dbPasswordSetting.value) {
         expectedPassword = dbPasswordSetting.value;
       }
     } catch (e) {
