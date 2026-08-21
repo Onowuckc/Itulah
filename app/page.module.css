@@ -71,10 +71,10 @@
 }
 
 .titleHighlight {
-  background: linear-gradient(135deg, #FFFFFF 0%, #38BDF8 50%, #00E5FF 100%);
+  background: linear-gradient(135deg, #FFFFFF 0%, #38BDF8 45%, #ef4444 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  filter: drop-shadow(0 0 25px rgba(56, 189, 248, 0.4));
+  filter: drop-shadow(0 0 25px rgba(239, 68, 68, 0.4));
 }
 
 .description {
@@ -98,19 +98,19 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1.5px;
-  color: #070D18;
-  background: linear-gradient(135deg, #0EA5E9 0%, #38BDF8 100%);
+  color: #ffffff;
+  background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
   padding: 16px 36px;
   border-radius: 30px;
-  box-shadow: 0 0 25px rgba(14, 165, 233, 0.45);
+  box-shadow: 0 0 25px rgba(220, 38, 38, 0.45);
   transition: var(--transition);
 }
 
 .primaryCta:hover {
-  background: linear-gradient(135deg, #38BDF8 0%, #00E5FF 100%);
-  color: #070D18;
+  background: linear-gradient(135deg, #1d4ed8 0%, #38bdf8 100%);
+  color: #ffffff;
   transform: translateY(-3px);
-  box-shadow: 0 0 35px rgba(0, 229, 255, 0.7);
+  box-shadow: 0 0 35px rgba(29, 78, 216, 0.7);
 }
 
 .secondaryCta {
@@ -120,7 +120,7 @@
   text-transform: uppercase;
   letter-spacing: 1.5px;
   color: #ffffff;
-  border: 1px solid rgba(56, 189, 248, 0.3);
+  border: 1px solid rgba(239, 68, 68, 0.35);
   padding: 16px 36px;
   border-radius: 30px;
   background: rgba(26, 38, 64, 0.55);
@@ -129,11 +129,11 @@
 }
 
 .secondaryCta:hover {
-  background: rgba(56, 189, 248, 0.15);
-  border-color: var(--color-electric-sky);
-  color: var(--color-electric-sky);
+  background: rgba(239, 68, 68, 0.15);
+  border-color: #ef4444;
+  color: #ef4444;
   transform: translateY(-3px);
-  box-shadow: 0 0 25px rgba(0, 229, 255, 0.35);
+  box-shadow: 0 0 25px rgba(239, 68, 68, 0.4);
 }
 
 /* Quick Hero Pills Bar for Background Switching */

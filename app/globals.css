@@ -1,28 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap');
 
 :root {
-  /* Damascus & Sky-Cyan 3D Engineering Dark System Tokens */
+  /* Damascus & Itulah Red/Blue 3D Engineering Dark System Tokens */
   --color-bg-dark: #070D18;            /* Main body background dark */
-  --color-damascus-blue: #0B1320;      /* Subtle section background variation */
-  --color-slate-dark: #0F172A;         /* Card background & surface dark */
-  --color-sky-blue: #38BDF8;           /* Primary Sky Blue links, highlights, glow borders */
-  --color-cyan-blue: #0EA5E9;          /* Cyan Blue buttons & active UI states */
-  --color-electric-sky: #00E5FF;       /* Vibrant neon accents & text gradient highlights */
-  --color-text-primary: #F8FAFC;       /* Crisp, high-contrast headings & primary copy */
-  --color-text-secondary: #94A3B8;     /* Body copy, subtitles, and descriptions */
-  --color-glass-bg: rgba(26, 38, 64, 0.55); /* Glass backdrop 16px blur */
-
-  /* Preserved Official Brand Colors */
+  --color-damascus-blue: #0B1320;      /* Damascus Dark Blue background variation */
+  --color-slate-dark: #0F172A;         /* Surface dark slate */
+  
+  /* Itulah Brand Core Colors */
   --color-brand-red: #dc2626;          /* Official Itulah Crimson Red */
   --color-brand-red-dark: #b91c1c;
+  --color-brand-red-bright: #ef4444;   /* High-visibility vibrant red */
+  
   --color-brand-blue: #1d4ed8;         /* Official Itulah Royal Navy Blue */
   --color-brand-blue-dark: #1e3a8a;
+  --color-sky-blue: #38BDF8;           /* Vibrant Sky Blue highlight */
+  --color-cyan-blue: #0EA5E9;          /* Active UI Cyan */
+  --color-electric-sky: #00E5FF;       /* Electric neon blue accent */
+  
+  --color-text-primary: #F8FAFC;       /* Crisp high-contrast text */
+  --color-text-secondary: #94A3B8;     /* Secondary subtitles & descriptions */
+  --color-glass-bg: rgba(26, 38, 64, 0.55); /* Glass backdrop 16px blur */
 
   --color-bg-surface: var(--color-slate-dark);
   --color-bg-surface-elevated: #1e293b;
   
   --color-card-dark: var(--color-glass-bg);
-  --color-card-border: rgba(56, 189, 248, 0.2);
+  --color-card-border: rgba(56, 189, 248, 0.25);
   
   --color-text-dark: var(--color-text-primary);
   --color-text-light: #ffffff;
@@ -30,11 +33,11 @@
   --color-text-muted-light: #cbd5e1;
 
   --color-primary: var(--color-sky-blue);
-  --color-accent: var(--color-cyan-blue);
-  --color-accent-hover: var(--color-electric-sky);
+  --color-accent: var(--color-brand-red);
+  --color-accent-hover: var(--color-brand-red-bright);
   
-  --color-border-dark: rgba(56, 189, 248, 0.2);
-  --color-border-light: rgba(56, 189, 248, 0.12);
+  --color-border-dark: rgba(56, 189, 248, 0.25);
+  --color-border-light: rgba(220, 38, 38, 0.2);
   
   /* Engineering Typography System */
   --font-heading: 'Outfit', sans-serif;
@@ -49,7 +52,7 @@
   --border-radius: 16px;
   --transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
   --box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.7);
-  --glass-glow: 0 0 30px rgba(56, 189, 248, 0.25);
+  --glass-glow: 0 0 30px rgba(56, 189, 248, 0.3), 0 0 30px rgba(220, 38, 38, 0.25);
 }
 
 /* Global resets */
@@ -82,9 +85,27 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: -0.02em;
 }
 
-/* Metallic Text Gradients */
+/* Metallic Text Gradients featuring Itulah Blue & Itulah Red */
 .text-gradient {
-  background: linear-gradient(135deg, #FFFFFF 0%, #38BDF8 50%, #00E5FF 100%);
+  background: linear-gradient(135deg, #FFFFFF 0%, #38BDF8 45%, #ef4444 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-red {
+  background: linear-gradient(135deg, #FFFFFF 0%, #ef4444 60%, #dc2626 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-blue {
+  background: linear-gradient(135deg, #FFFFFF 0%, #38BDF8 60%, #1d4ed8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-itulah {
+  background: linear-gradient(135deg, #38BDF8 0%, #ffffff 50%, #dc2626 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -94,7 +115,7 @@ h1, h2, h3, h4, h5, h6 {
   background: var(--color-glass-bg);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(56, 189, 248, 0.2);
+  border: 1px solid rgba(56, 189, 248, 0.25);
   border-radius: var(--border-radius);
   position: relative;
   overflow: hidden;
@@ -113,7 +134,8 @@ h1, h2, h3, h4, h5, h6 {
   background: linear-gradient(
     90deg, 
     transparent 0%, 
-    rgba(56, 189, 248, 0.15) 50%, 
+    rgba(56, 189, 248, 0.15) 35%, 
+    rgba(239, 68, 68, 0.18) 65%, 
     transparent 100%
   );
   transform: skewX(-25deg);
@@ -123,15 +145,15 @@ h1, h2, h3, h4, h5, h6 {
 
 .glass-card:hover {
   transform: translateY(-6px);
-  border-color: rgba(56, 189, 248, 0.6);
-  box-shadow: var(--glass-glow);
+  border-color: rgba(239, 68, 68, 0.6);
+  box-shadow: 0 0 35px rgba(56, 189, 248, 0.3), 0 0 35px rgba(220, 38, 38, 0.3);
 }
 
 .glass-card:hover::before {
   left: 150%;
 }
 
-/* Interactive Pulse Indicators */
+/* Interactive Pulse Indicators - Itulah Red & Blue */
 .badge-pulse {
   font-family: var(--font-mono);
   display: inline-flex;
@@ -139,22 +161,33 @@ h1, h2, h3, h4, h5, h6 {
   gap: 8px;
   padding: 6px 16px;
   border-radius: 30px;
-  background: rgba(14, 165, 233, 0.12);
-  border: 1px solid rgba(56, 189, 248, 0.3);
-  color: var(--color-electric-sky);
+  background: rgba(220, 38, 38, 0.12);
+  border: 1px solid rgba(239, 68, 68, 0.35);
+  color: #ef4444;
   font-size: 13px;
   font-weight: 600;
   letter-spacing: 0.5px;
   position: relative;
 }
 
+.badge-pulse-blue {
+  background: rgba(29, 78, 216, 0.15);
+  border-color: rgba(56, 189, 248, 0.4);
+  color: #38bdf8;
+}
+
 .badge-pulse-dot {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background-color: var(--color-electric-sky);
-  box-shadow: 0 0 10px var(--color-electric-sky);
+  background-color: #ef4444;
+  box-shadow: 0 0 10px #ef4444;
   position: relative;
+}
+
+.badge-pulse-blue .badge-pulse-dot {
+  background-color: #38bdf8;
+  box-shadow: 0 0 10px #38bdf8;
 }
 
 .badge-pulse-dot::after {
@@ -165,8 +198,12 @@ h1, h2, h3, h4, h5, h6 {
   right: -4px;
   bottom: -4px;
   border-radius: 50%;
-  border: 1.5px solid var(--color-electric-sky);
+  border: 1.5px solid #ef4444;
   animation: pulseGlowRing 2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+}
+
+.badge-pulse-blue .badge-pulse-dot::after {
+  border-color: #38bdf8;
 }
 
 @keyframes pulseGlowRing {
@@ -184,7 +221,7 @@ h1, h2, h3, h4, h5, h6 {
 .pill-button {
   font-family: var(--font-heading);
   border-radius: 30px;
-  padding: 10px 24px;
+  padding: 12px 28px;
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.5px;
@@ -193,18 +230,46 @@ h1, h2, h3, h4, h5, h6 {
   gap: 8px;
   transition: var(--transition);
   cursor: pointer;
+  text-transform: uppercase;
+}
+
+.pill-button-red {
+  background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+  color: #ffffff;
+  border: none;
+  box-shadow: 0 0 25px rgba(220, 38, 38, 0.45);
+}
+
+.pill-button-red:hover {
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+  box-shadow: 0 0 35px rgba(239, 68, 68, 0.65);
+  transform: translateY(-2px);
+}
+
+.pill-button-blue {
+  background: linear-gradient(135deg, #1d4ed8 0%, #38bdf8 100%);
+  color: #ffffff;
+  border: none;
+  box-shadow: 0 0 25px rgba(29, 78, 216, 0.45);
+}
+
+.pill-button-blue:hover {
+  background: linear-gradient(135deg, #38bdf8 0%, #00e5ff 100%);
+  color: #070d18;
+  box-shadow: 0 0 35px rgba(56, 189, 248, 0.65);
+  transform: translateY(-2px);
 }
 
 .pill-button-primary {
-  background: linear-gradient(135deg, #0EA5E9 0%, #38BDF8 100%);
-  color: #070D18;
+  background: linear-gradient(135deg, #dc2626 0%, #1d4ed8 100%);
+  color: #ffffff;
   border: none;
-  box-shadow: 0 0 20px rgba(14, 165, 233, 0.35);
+  box-shadow: 0 0 25px rgba(220, 38, 38, 0.35);
 }
 
 .pill-button-primary:hover {
-  background: linear-gradient(135deg, #38BDF8 0%, #00E5FF 100%);
-  box-shadow: 0 0 30px rgba(0, 229, 255, 0.5);
+  background: linear-gradient(135deg, #ef4444 0%, #38bdf8 100%);
+  box-shadow: 0 0 35px rgba(239, 68, 68, 0.5);
   transform: translateY(-2px);
 }
 

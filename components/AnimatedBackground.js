@@ -67,17 +67,18 @@ export default function AnimatedBackground() {
 
     container.appendChild(renderer.domElement);
 
-    // 4. Interactive Particle Field
-    const particleCount = 1200;
+    // 4. Interactive Particle Field with Itulah Red & Itulah Blue Palette
+    const particleCount = 1400;
     const geometry = new THREE.BufferGeometry();
     const positions = new Float32Array(particleCount * 3);
     const colors = new Float32Array(particleCount * 3);
 
     const palette = [
+      new THREE.Color('#DC2626'), // Official Itulah Crimson Red
+      new THREE.Color('#EF4444'), // Vibrant Electric Red
+      new THREE.Color('#1D4ED8'), // Official Itulah Royal Navy Blue
       new THREE.Color('#38BDF8'), // Sky Blue Primary
-      new THREE.Color('#0EA5E9'), // Cyan Blue
       new THREE.Color('#00E5FF'), // Electric Sky Accent
-      new THREE.Color('#94A3B8'), // Slate Secondary
     ];
 
     for (let i = 0; i < particleCount; i++) {
@@ -94,13 +95,13 @@ export default function AnimatedBackground() {
     geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
     geometry.setAttribute('color', new THREE.BufferAttribute(colors, 3));
 
-    // Particle Material with Soft Canvas Texture
+    // Particle Material with Soft Dual-Tone Red/Blue Texture
     const particleTexture = createParticleTexture();
     const particleMaterial = new THREE.PointsMaterial({
-      size: 1.2,
+      size: 1.3,
       map: particleTexture,
       transparent: true,
-      opacity: 0.8,
+      opacity: 0.85,
       vertexColors: true,
       blending: THREE.AdditiveBlending,
       depthWrite: false,
@@ -109,28 +110,28 @@ export default function AnimatedBackground() {
     const particleSystem = new THREE.Points(geometry, particleMaterial);
     scene.add(particleSystem);
 
-    // 5. Spatial Grid Structure (High-Tech 3D Mesh Grid)
+    // 5. Spatial Grid Structure (High-Tech 3D Mesh Grid in Red & Blue)
     const gridGroup = new THREE.Group();
 
-    const gridHelper = new THREE.GridHelper(100, 50, 0x38bdf8, 0x0b1320);
+    const gridHelper = new THREE.GridHelper(100, 50, 0xdc2626, 0x0b1320);
     gridHelper.position.y = -15;
     gridHelper.material.opacity = 0.35;
     gridHelper.material.transparent = true;
     gridGroup.add(gridHelper);
 
-    const ceilingGrid = new THREE.GridHelper(100, 50, 0x0ea5e9, 0x0b1320);
+    const ceilingGrid = new THREE.GridHelper(100, 50, 0x1d4ed8, 0x0b1320);
     ceilingGrid.position.y = 25;
-    ceilingGrid.material.opacity = 0.25;
+    ceilingGrid.material.opacity = 0.3;
     ceilingGrid.material.transparent = true;
     gridGroup.add(ceilingGrid);
 
-    // Wireframe Engineering Cubes / Structural Nodes
+    // Wireframe Engineering Cubes / Structural Nodes (Red & Blue)
     const cubeGeo = new THREE.IcosahedronGeometry(8, 2);
     const cubeMat = new THREE.MeshBasicMaterial({
-      color: 0x00e5ff,
+      color: 0xef4444,
       wireframe: true,
       transparent: true,
-      opacity: 0.18,
+      opacity: 0.22,
     });
     const floatingNode1 = new THREE.Mesh(cubeGeo, cubeMat);
     floatingNode1.position.set(-25, 8, -10);
@@ -142,7 +143,7 @@ export default function AnimatedBackground() {
         color: 0x38bdf8,
         wireframe: true,
         transparent: true,
-        opacity: 0.22,
+        opacity: 0.25,
       })
     );
     floatingNode2.position.set(28, -6, -15);
@@ -150,13 +151,13 @@ export default function AnimatedBackground() {
 
     scene.add(gridGroup);
 
-    // 6. Floating Image / Hologram Planes
+    // 6. Floating Image / Hologram Planes (Red and Blue accent wireframes)
     const planeGeo = new THREE.PlaneGeometry(12, 7);
     const planeMat1 = new THREE.MeshBasicMaterial({
-      color: 0x0ea5e9,
+      color: 0xdc2626,
       side: THREE.DoubleSide,
       transparent: true,
-      opacity: 0.12,
+      opacity: 0.15,
       wireframe: true,
     });
     const plane1 = new THREE.Mesh(planeGeo, planeMat1);
@@ -165,10 +166,10 @@ export default function AnimatedBackground() {
     scene.add(plane1);
 
     const planeMat2 = new THREE.MeshBasicMaterial({
-      color: 0x00e5ff,
+      color: 0x1d4ed8,
       side: THREE.DoubleSide,
       transparent: true,
-      opacity: 0.1,
+      opacity: 0.15,
       wireframe: true,
     });
     const plane2 = new THREE.Mesh(planeGeo, planeMat2);
@@ -176,13 +177,17 @@ export default function AnimatedBackground() {
     plane2.rotation.y = -Math.PI / 5;
     scene.add(plane2);
 
-    // 7. Lighting
+    // 7. Lighting - Dual Red & Blue Point Lights
     const ambientLight = new THREE.AmbientLight(0x0b1320, 2);
     scene.add(ambientLight);
 
-    const pointLight = new THREE.PointLight(0x00e5ff, 3, 60);
-    pointLight.position.set(0, 10, 10);
-    scene.add(pointLight);
+    const redLight = new THREE.PointLight(0xef4444, 3, 65);
+    redLight.position.set(-20, 15, 10);
+    scene.add(redLight);
+
+    const blueLight = new THREE.PointLight(0x38bdf8, 3, 65);
+    blueLight.position.set(20, -15, 10);
+    scene.add(blueLight);
 
     // 8. Mouse Interaction
     let mouseX = 0;
@@ -241,16 +246,19 @@ export default function AnimatedBackground() {
       plane1.position.y = -4 + Math.sin(elapsedTime * 0.8) * 1.5;
       plane2.position.y = 10 + Math.cos(elapsedTime * 0.7) * 1.2;
 
-      // Pulse point light position
-      pointLight.position.x = Math.sin(elapsedTime * 0.5) * 20;
-      pointLight.position.z = Math.cos(elapsedTime * 0.5) * 20;
+      // Pulse dual red & blue point light positions
+      redLight.position.x = Math.sin(elapsedTime * 0.5) * 25;
+      redLight.position.z = Math.cos(elapsedTime * 0.5) * 25;
+
+      blueLight.position.x = -Math.sin(elapsedTime * 0.5) * 25;
+      blueLight.position.z = -Math.cos(elapsedTime * 0.5) * 25;
 
       renderer.render(scene, camera);
     };
 
     animate();
 
-    // Helper for soft particle texture canvas
+    // Helper for soft dual-color particle texture canvas
     function createParticleTexture() {
       const canvas = document.createElement('canvas');
       canvas.width = 32;
@@ -259,8 +267,8 @@ export default function AnimatedBackground() {
 
       const gradient = ctx.createRadialGradient(16, 16, 0, 16, 16, 16);
       gradient.addColorStop(0, 'rgba(255, 255, 255, 1)');
-      gradient.addColorStop(0.3, 'rgba(56, 189, 248, 0.8)');
-      gradient.addColorStop(0.8, 'rgba(14, 165, 233, 0.2)');
+      gradient.addColorStop(0.35, 'rgba(239, 68, 68, 0.8)');
+      gradient.addColorStop(0.7, 'rgba(56, 189, 248, 0.4)');
       gradient.addColorStop(1, 'rgba(7, 13, 24, 0)');
 
       ctx.fillStyle = gradient;

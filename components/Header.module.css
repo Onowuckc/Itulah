@@ -51,10 +51,10 @@
   font-weight: 800;
   font-size: 26px;
   letter-spacing: 3px;
-  background: linear-gradient(135deg, #FFFFFF 0%, #38BDF8 50%, #00E5FF 100%);
+  background: linear-gradient(135deg, #FFFFFF 0%, #38BDF8 45%, #dc2626 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-shadow: 0 0 20px rgba(56, 189, 248, 0.4);
+  text-shadow: 0 0 20px rgba(220, 38, 38, 0.4);
 }
 
 .logoImage[style*="display: none"] + .logoFallback {
@@ -79,8 +79,8 @@
 }
 
 .navLink:hover {
-  color: var(--color-sky-blue);
-  text-shadow: 0 0 12px rgba(56, 189, 248, 0.6);
+  color: #ef4444;
+  text-shadow: 0 0 12px rgba(239, 68, 68, 0.6);
 }
 
 .navLink::after {
@@ -90,8 +90,8 @@
   left: 0;
   width: 0;
   height: 2px;
-  background: linear-gradient(90deg, #38BDF8, #00E5FF);
-  box-shadow: 0 0 10px rgba(0, 229, 255, 0.7);
+  background: linear-gradient(90deg, #1d4ed8, #dc2626);
+  box-shadow: 0 0 10px rgba(220, 38, 38, 0.7);
   transition: var(--transition);
 }
 
@@ -100,8 +100,8 @@
 }
 
 .active {
-  color: var(--color-electric-sky) !important;
-  text-shadow: 0 0 14px rgba(0, 229, 255, 0.7);
+  color: #ef4444 !important;
+  text-shadow: 0 0 14px rgba(239, 68, 68, 0.7);
 }
 
 .active::after {
@@ -114,19 +114,19 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #070D18;
-  background: linear-gradient(135deg, #0EA5E9 0%, #38BDF8 100%);
+  color: #ffffff;
+  background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
   padding: 10px 24px;
   border-radius: 30px;
-  box-shadow: 0 0 20px rgba(14, 165, 233, 0.4);
+  box-shadow: 0 0 20px rgba(220, 38, 38, 0.45);
   transition: var(--transition);
 }
 
 .quoteButton:hover {
-  background: linear-gradient(135deg, #38BDF8 0%, #00E5FF 100%);
-  color: #070D18;
+  background: linear-gradient(135deg, #1d4ed8 0%, #38bdf8 100%);
+  color: #ffffff;
   transform: translateY(-2px);
-  box-shadow: 0 0 30px rgba(0, 229, 255, 0.6);
+  box-shadow: 0 0 30px rgba(29, 78, 216, 0.65);
 }
 
 /* Menu Toggle Button */
