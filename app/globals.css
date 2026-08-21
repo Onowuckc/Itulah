@@ -1,48 +1,55 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap');
 
 :root {
-  /* Color Palette - Itulah Official Company Brand Colors */
-  --color-brand-red: #dc2626;        /* Official Itulah Crimson Red */
+  /* Damascus & Sky-Cyan 3D Engineering Dark System Tokens */
+  --color-bg-dark: #070D18;            /* Main body background dark */
+  --color-damascus-blue: #0B1320;      /* Subtle section background variation */
+  --color-slate-dark: #0F172A;         /* Card background & surface dark */
+  --color-sky-blue: #38BDF8;           /* Primary Sky Blue links, highlights, glow borders */
+  --color-cyan-blue: #0EA5E9;          /* Cyan Blue buttons & active UI states */
+  --color-electric-sky: #00E5FF;       /* Vibrant neon accents & text gradient highlights */
+  --color-text-primary: #F8FAFC;       /* Crisp, high-contrast headings & primary copy */
+  --color-text-secondary: #94A3B8;     /* Body copy, subtitles, and descriptions */
+  --color-glass-bg: rgba(26, 38, 64, 0.55); /* Glass backdrop 16px blur */
+
+  /* Preserved Official Brand Colors */
+  --color-brand-red: #dc2626;          /* Official Itulah Crimson Red */
   --color-brand-red-dark: #b91c1c;
-  --color-brand-blue: #1d4ed8;       /* Official Itulah Royal Navy Blue */
+  --color-brand-blue: #1d4ed8;         /* Official Itulah Royal Navy Blue */
   --color-brand-blue-dark: #1e3a8a;
 
-  --color-bg-dark: #070a12;
-  --color-bg-surface: #0f172a;
+  --color-bg-surface: var(--color-slate-dark);
   --color-bg-surface-elevated: #1e293b;
   
-  --color-card-dark: rgba(15, 23, 42, 0.78);
-  --color-card-border: rgba(255, 255, 255, 0.12);
+  --color-card-dark: var(--color-glass-bg);
+  --color-card-border: rgba(56, 189, 248, 0.2);
   
-  --color-text-dark: #f8fafc;
-  --color-text-light: #f1f5f9;
-  --color-text-muted-dark: #94a3b8;
+  --color-text-dark: var(--color-text-primary);
+  --color-text-light: #ffffff;
+  --color-text-muted-dark: var(--color-text-secondary);
   --color-text-muted-light: #cbd5e1;
 
-  --color-primary: #0f172a;
-  --color-primary-rgb: 15, 23, 42;
-
-  /* Primary Brand Accent Colors */
-  --color-accent: #dc2626;           /* Crimson Red Accent */
-  --color-accent-hover: #b91c1c;
-  --color-accent-rgb: 220, 38, 38;
-
-  --color-cyan: #3b82f6;             /* Royal Navy Blue Accent */
-  --color-cyan-glow: rgba(59, 130, 246, 0.4);
+  --color-primary: var(--color-sky-blue);
+  --color-accent: var(--color-cyan-blue);
+  --color-accent-hover: var(--color-electric-sky);
   
-  --color-purple: #9333ea;
-  --color-emerald: #10b981;
-
-  --color-border-dark: rgba(255, 255, 255, 0.12);
-  --color-border-light: rgba(255, 255, 255, 0.08);
+  --color-border-dark: rgba(56, 189, 248, 0.2);
+  --color-border-light: rgba(56, 189, 248, 0.12);
   
-  --font-sans: 'Inter', sans-serif;
-  --font-display: 'Playfair Display', serif;
-  --font-ui: 'Outfit', sans-serif;
+  /* Engineering Typography System */
+  --font-heading: 'Outfit', sans-serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+  --font-mono: 'Fira Code', monospace;
+  
+  --font-sans: var(--font-body);
+  --font-display: var(--font-heading);
+  --font-ui: var(--font-heading);
 
+  --border-radius-pill: 30px;
   --border-radius: 16px;
   --transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
   --box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.7);
+  --glass-glow: 0 0 30px rgba(56, 189, 248, 0.25);
 }
 
 /* Global resets */
@@ -58,15 +65,161 @@ html {
 }
 
 body {
-  font-family: var(--font-sans);
+  font-family: var(--font-body);
   background-color: var(--color-bg-dark);
-  color: var(--color-text-dark);
+  color: var(--color-text-primary);
   min-height: 100%;
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+/* Metallic Text Gradients */
+.text-gradient {
+  background: linear-gradient(135deg, #FFFFFF 0%, #38BDF8 50%, #00E5FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Glassmorphic Card & Shimmer Effect */
+.glass-card {
+  background: var(--color-glass-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  border-radius: var(--border-radius);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), 
+              border-color 0.35s ease, 
+              box-shadow 0.35s ease;
+}
+
+.glass-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -150%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg, 
+    transparent 0%, 
+    rgba(56, 189, 248, 0.15) 50%, 
+    transparent 100%
+  );
+  transform: skewX(-25deg);
+  transition: left 0.75s ease;
+  pointer-events: none;
+}
+
+.glass-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(56, 189, 248, 0.6);
+  box-shadow: var(--glass-glow);
+}
+
+.glass-card:hover::before {
+  left: 150%;
+}
+
+/* Interactive Pulse Indicators */
+.badge-pulse {
+  font-family: var(--font-mono);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 16px;
+  border-radius: 30px;
+  background: rgba(14, 165, 233, 0.12);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  color: var(--color-electric-sky);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  position: relative;
+}
+
+.badge-pulse-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--color-electric-sky);
+  box-shadow: 0 0 10px var(--color-electric-sky);
+  position: relative;
+}
+
+.badge-pulse-dot::after {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  border-radius: 50%;
+  border: 1.5px solid var(--color-electric-sky);
+  animation: pulseGlowRing 2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+}
+
+@keyframes pulseGlowRing {
+  0% {
+    transform: scale(0.5);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2.2);
+    opacity: 0;
+  }
+}
+
+/* Pill Buttons */
+.pill-button {
+  font-family: var(--font-heading);
+  border-radius: 30px;
+  padding: 10px 24px;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.pill-button-primary {
+  background: linear-gradient(135deg, #0EA5E9 0%, #38BDF8 100%);
+  color: #070D18;
+  border: none;
+  box-shadow: 0 0 20px rgba(14, 165, 233, 0.35);
+}
+
+.pill-button-primary:hover {
+  background: linear-gradient(135deg, #38BDF8 0%, #00E5FF 100%);
+  box-shadow: 0 0 30px rgba(0, 229, 255, 0.5);
+  transform: translateY(-2px);
+}
+
+.pill-button-glass {
+  background: rgba(26, 38, 64, 0.55);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  color: var(--color-text-primary);
+}
+
+.pill-button-glass:hover {
+  border-color: var(--color-electric-sky);
+  color: var(--color-electric-sky);
+  box-shadow: 0 0 20px rgba(0, 229, 255, 0.25);
+  transform: translateY(-2px);
 }
 
 /* Utility layout classes */

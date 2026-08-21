@@ -8,14 +8,14 @@ export default function Home() {
       {/* Hero Section */}
       <section className={styles.hero}>
         <div className={styles.heroContent}>
-          <div className={styles.badge}>
-            <span className={styles.badgeDot}></span>
+          <div className={`${styles.badge} badge-pulse`}>
+            <span className={`${styles.badgeDot} badge-pulse-dot`}></span>
             Established 1989 • Pioneer Enterprise
           </div>
 
           <h1 className={styles.title}>
             Diversified Excellence. <br />
-            <span className={styles.titleHighlight}>Pioneering Premium Solutions.</span>
+            <span className={`${styles.titleHighlight} text-gradient`}>Pioneering Premium Solutions.</span>
           </h1>
 
           <p className={styles.description}>
@@ -95,7 +95,7 @@ export default function Home() {
 
           <div className={styles.divisionGrid}>
             {/* Division 1: Spirits & Beverages */}
-            <div className={styles.divCard}>
+            <div className={`${styles.divCard} glass-card`}>
               <Image
                 src="/img/alcoholic beverages.png"
                 alt="Alcoholic Beverages"
@@ -117,7 +117,7 @@ export default function Home() {
             </div>
 
             {/* Division 2: Security */}
-            <div className={styles.divCard}>
+            <div className={`${styles.divCard} glass-card`}>
               <Image
                 src="/img/physical locks.png"
                 alt="Security Solutions"
@@ -139,7 +139,7 @@ export default function Home() {
             </div>
 
             {/* Division 3: Fragrances & Telecom */}
-            <div className={styles.divCard}>
+            <div className={`${styles.divCard} glass-card`}>
               <Image
                 src="/img/Fragrance.png"
                 alt="Flavours & Fragrances"
@@ -176,7 +176,7 @@ export default function Home() {
 
           <div className={styles.bgShowcaseGrid}>
             {/* Background 1 Showcase */}
-            <div className={styles.bgShowcaseCard}>
+            <div className={`${styles.bgShowcaseCard} glass-card`}>
               <div className={styles.bgThumbWrapper}>
                 <Image
                   src="/img/background1.jpg"
@@ -196,7 +196,7 @@ export default function Home() {
             </div>
 
             {/* Background 2 Showcase */}
-            <div className={styles.bgShowcaseCard}>
+            <div className={`${styles.bgShowcaseCard} glass-card`}>
               <div className={styles.bgThumbWrapper}>
                 <Image
                   src="/img/background2.jpg"
@@ -216,7 +216,7 @@ export default function Home() {
             </div>
 
             {/* Background 3 Showcase */}
-            <div className={styles.bgShowcaseCard}>
+            <div className={`${styles.bgShowcaseCard} glass-card`}>
               <div className={styles.bgThumbWrapper}>
                 <Image
                   src="/img/background3.jpg"
