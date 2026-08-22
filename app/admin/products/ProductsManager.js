@@ -306,14 +306,50 @@ export default function ProductsManager({ initialProducts }) {
               
               <div className={styles.manualUrlContainer}>
                 <details className={styles.manualUrlDetails}>
-                  <summary className={styles.manualUrlSummary}>Or enter manual image path/URL</summary>
+                  <summary className={styles.manualUrlSummary}>Or pick preset image path</summary>
+                  <select
+                    className={styles.input}
+                    value={formData.imageUrl}
+                    onChange={(e) => setFormData(prev => ({ ...prev, imageUrl: e.target.value }))}
+                    style={{ marginTop: '8px', width: '100%' }}
+                  >
+                    <option value="">-- Select Preset Image --</option>
+                    <optgroup label="Wild Octopus Images">
+                      <option value="/img/wildOctopus1.jpeg">Wild Octopus 1 (/img/wildOctopus1.jpeg)</option>
+                      <option value="/img/WildOctopus2.jpeg">Wild Octopus 2 (/img/WildOctopus2.jpeg)</option>
+                      <option value="/img/WildOctopus.png">Wild Octopus PNG (/img/WildOctopus.png)</option>
+                    </optgroup>
+                    <optgroup label="Fragrance Collection">
+                      <option value="/img/fragrance1.jpeg">Fragrance 1 (/img/fragrance1.jpeg)</option>
+                      <option value="/img/Fragrance2.jpeg">Fragrance 2 (/img/Fragrance2.jpeg)</option>
+                      <option value="/img/Fragrance3.jpeg">Fragrance 3 (/img/Fragrance3.jpeg)</option>
+                      <option value="/img/fragrance4.jpeg">Fragrance 4 (/img/fragrance4.jpeg)</option>
+                      <option value="/img/fragrance5.jpeg">Fragrance 5 (/img/fragrance5.jpeg)</option>
+                      <option value="/img/Fragrance6.jpeg">Fragrance 6 (/img/Fragrance6.jpeg)</option>
+                      <option value="/img/fragrance7.jpeg">Fragrance 7 (/img/fragrance7.jpeg)</option>
+                      <option value="/img/fragrance8.jpeg">Fragrance 8 (/img/fragrance8.jpeg)</option>
+                      <option value="/img/fragrance9.jpeg">Fragrance 9 (/img/fragrance9.jpeg)</option>
+                      <option value="/img/fragrance10.jpeg">Fragrance 10 (/img/fragrance10.jpeg)</option>
+                      <option value="/img/fragrance11.jpeg">Fragrance 11 (/img/fragrance11.jpeg)</option>
+                      <option value="/img/fragrance12.jpeg">Fragrance 12 (/img/fragrance12.jpeg)</option>
+                      <option value="/img/bodySpray.png">Body Spray (/img/bodySpray.png)</option>
+                    </optgroup>
+                    <optgroup label="Other Vertical Images">
+                      <option value="/img/alcoholic beverages.png">Spirits & Beverages (/img/alcoholic beverages.png)</option>
+                      <option value="/img/cctv.png">CCTV (/img/cctv.png)</option>
+                      <option value="/img/physical locks.png">Physical Locks (/img/physical locks.png)</option>
+                      <option value="/img/FireAlarm.png">Fire Alarm (/img/FireAlarm.png)</option>
+                      <option value="/img/communicationAndLandline.png">Telephony (/img/communicationAndLandline.png)</option>
+                      <option value="/img/Nutrition.png">Nutrition (/img/Nutrition.png)</option>
+                    </optgroup>
+                  </select>
                   <input
                     type="text"
                     name="imageUrl"
                     className={styles.input}
                     value={formData.imageUrl}
                     onChange={handleInputChange}
-                    placeholder="e.g. /img/cctv.png"
+                    placeholder="Or enter custom URL/path e.g. /img/cctv.png"
                     style={{ marginTop: '8px', width: '100%' }}
                   />
                 </details>

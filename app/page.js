@@ -97,8 +97,8 @@ export default function Home() {
             {/* Division 1: Spirits & Beverages */}
             <div className={`${styles.divCard} glass-card`}>
               <Image
-                src="/img/alcoholic beverages.png"
-                alt="Alcoholic Beverages"
+                src="/img/wildOctopus1.jpeg"
+                alt="Wild Octopus & Beverages"
                 fill
                 sizes="(max-width: 992px) 100vw, 33vw"
                 className={styles.cardBg}
@@ -141,7 +141,7 @@ export default function Home() {
             {/* Division 3: Fragrances & Telecom */}
             <div className={`${styles.divCard} glass-card`}>
               <Image
-                src="/img/Fragrance.png"
+                src="/img/fragrance1.jpeg"
                 alt="Flavours & Fragrances"
                 fill
                 sizes="(max-width: 992px) 100vw, 33vw"

@@ -10,14 +10,126 @@ export default function GalleryPage() {
   const galleryItems = [
     {
       id: 1,
-      title: 'Wild Octopus Premium Liqueur',
+      title: 'Wild Octopus Herbal Liqueur (Original Edition)',
       category: 'Beverages',
-      description: 'Exclusive bottle designs and branding for our premium herbal liqueur.',
-      image: '/img/WildOctopus.png',
+      description: 'The iconic bottle design and signature botanical blend of Wild Octopus Liqueur.',
+      image: '/img/wildOctopus1.jpeg',
       brochure: '/brochures/Wild_Octopus_Beverages.pdf'
     },
     {
       id: 2,
+      title: 'Wild Octopus Special Reserve',
+      category: 'Beverages',
+      description: 'Premium barrel-matured herbal liqueur crafted for celebration and luxury nightlife.',
+      image: '/img/WildOctopus2.jpeg',
+      brochure: '/brochures/Wild_Octopus_Beverages.pdf'
+    },
+    {
+      id: 3,
+      title: 'Wild Octopus Premium Craft Bottle',
+      category: 'Beverages',
+      description: 'Exclusive custom label branding and crystal glass craft presentation for Wild Octopus.',
+      image: '/img/WildOctopus.png',
+      brochure: '/brochures/Wild_Octopus_Beverages.pdf'
+    },
+    {
+      id: 4,
+      title: 'Aromatic Fragrance Oil Collection (N° 1)',
+      category: 'Fragrances & Flavours',
+      description: 'Pure essential oil formulation imported from premier international perfume houses.',
+      image: '/img/fragrance1.jpeg',
+      brochure: '/brochures/Fragrances_Flavours_Distribution.pdf'
+    },
+    {
+      id: 5,
+      title: 'Fine Fragrance Essence Blend (N° 2)',
+      category: 'Fragrances & Flavours',
+      description: 'High-concentration aromatic oils tailored for cosmetics, soaps, and luxury perfumery.',
+      image: '/img/Fragrance2.jpeg',
+      brochure: '/brochures/Fragrances_Flavours_Distribution.pdf'
+    },
+    {
+      id: 6,
+      title: 'Royal Velvet Floral Fragrance (N° 3)',
+      category: 'Fragrances & Flavours',
+      description: 'Deep floral tones featuring jasmine, rose, and amber base accords for fine beauty products.',
+      image: '/img/Fragrance3.jpeg',
+      brochure: '/brochures/Fragrances_Flavours_Distribution.pdf'
+    },
+    {
+      id: 7,
+      title: 'Citrus & Botanical Flavour Oil (N° 4)',
+      category: 'Fragrances & Flavours',
+      description: 'Vibrant zesty citrus notes designed for beverages, confectionery, and personal care lines.',
+      image: '/img/fragrance4.jpeg',
+      brochure: '/brochures/Fragrances_Flavours_Distribution.pdf'
+    },
+    {
+      id: 8,
+      title: 'Exotic Amber & Spice Essence (N° 5)',
+      category: 'Fragrances & Flavours',
+      description: 'Rich oriental spicy fragrance profile crafted for luxury unisex body sprays and candles.',
+      image: '/img/fragrance5.jpeg',
+      brochure: '/brochures/Fragrances_Flavours_Distribution.pdf'
+    },
+    {
+      id: 9,
+      title: 'Oceanic Breeze Eau De Parfum Oils (N° 6)',
+      category: 'Fragrances & Flavours',
+      description: 'Crisp aquatic fragrance notes bringing long-lasting freshness to personal care products.',
+      image: '/img/Fragrance6.jpeg',
+      brochure: '/brochures/Fragrances_Flavours_Distribution.pdf'
+    },
+    {
+      id: 10,
+      title: 'Golden Vanilla & Sandalwood Oil (N° 7)',
+      category: 'Fragrances & Flavours',
+      description: 'Smooth gourmand fragrance notes blending sweet vanilla bean with warm mysore sandalwood.',
+      image: '/img/fragrance7.jpeg',
+      brochure: '/brochures/Fragrances_Flavours_Distribution.pdf'
+    },
+    {
+      id: 11,
+      title: 'Pure Botanical Extract Concentrate (N° 8)',
+      category: 'Fragrances & Flavours',
+      description: '100% pure organic aromatic extracts for premium healthcare and aromatherapy applications.',
+      image: '/img/fragrance8.jpeg',
+      brochure: '/brochures/Fragrances_Flavours_Distribution.pdf'
+    },
+    {
+      id: 12,
+      title: 'Midnight Musk Fine Perfumery (N° 9)',
+      category: 'Fragrances & Flavours',
+      description: 'Sensual musk notes for high-end designer fragrances and premium body spray manufacturing.',
+      image: '/img/fragrance9.jpeg',
+      brochure: '/brochures/Fragrances_Flavours_Distribution.pdf'
+    },
+    {
+      id: 13,
+      title: 'Tropical Fruit Essence Extract (N° 10)',
+      category: 'Fragrances & Flavours',
+      description: 'Lush tropical flavour oil accords created for food & beverage flavoring solutions.',
+      image: '/img/fragrance10.jpeg',
+      brochure: '/brochures/Fragrances_Flavours_Distribution.pdf'
+    },
+    {
+      id: 14,
+      title: 'Fresh Herbal & Green Tea Notes (N° 11)',
+      category: 'Fragrances & Flavours',
+      description: 'Revitalizing green leaf scent profile for spa lines and premium hotel amenities.',
+      image: '/img/fragrance11.jpeg',
+      brochure: '/brochures/Fragrances_Flavours_Distribution.pdf'
+    },
+    {
+      id: 15,
+      title: 'Luxury Cedarwood & Leather Oil (N° 12)',
+      category: 'Fragrances & Flavours',
+      description: 'Sophisticated woody leather accords for premium men’s grooming and prestige fragrances.',
+      image: '/img/fragrance12.jpeg',
+      brochure: '/brochures/Fragrances_Flavours_Distribution.pdf'
+    },
+    {
+      id: 16,
       title: 'Alcoholic Beverages Collection',
       category: 'Beverages',
       description: 'Imported and locally blended spirits including Country Pride gin, classic and cinnamon whiskeys.',
@@ -25,7 +137,7 @@ export default function GalleryPage() {
       brochure: '/brochures/Country_Pride_Spirits.pdf'
     },
     {
-      id: 3,
+      id: 17,
       title: 'CCTV & Surveillance Cameras',
       category: 'Security Solutions',
       description: 'Full range of smart IP cameras, pan-tilt-zoom directional cameras, covert recorders, and network interfaces.',
@@ -33,7 +145,7 @@ export default function GalleryPage() {
       brochure: '/brochures/CCTV_Surveillance_Solutions.pdf'
     },
     {
-      id: 4,
+      id: 18,
       title: 'Locks & Physical Hardware',
       category: 'Security Solutions',
       description: 'German-engineered padlocks, container lock systems, mortice handles, and combination lockboxes.',
@@ -41,7 +153,7 @@ export default function GalleryPage() {
       brochure: '/brochures/Locks_Physical_Security.pdf'
     },
     {
-      id: 5,
+      id: 19,
       title: 'Fire Alarm & Safety Detection',
       category: 'Fire Safety',
       description: 'Optical smoke detectors, wireless trigger stations, extinguishers, panels, and heat warning bells.',
@@ -49,7 +161,7 @@ export default function GalleryPage() {
       brochure: '/brochures/Fire_Safety_Systems.pdf'
     },
     {
-      id: 6,
+      id: 20,
       title: 'Telecommunication (PABX Landline)',
       category: 'Telecommunications',
       description: 'Samsung and Gigaset office PBX telephone interfaces, IP handsets, and modular control stations.',
@@ -57,15 +169,7 @@ export default function GalleryPage() {
       brochure: '/brochures/PABX_Telephony_Catalog.pdf'
     },
     {
-      id: 7,
-      title: 'Flavours & Aromatic Fragrances',
-      category: 'Fragrances & Flavours',
-      description: 'Raw essential oil imports and fragrance compounds for body, fabric, home, and oral care.',
-      image: '/img/Fragrance.png',
-      brochure: '/brochures/Fragrances_Flavours_Distribution.pdf'
-    },
-    {
-      id: 8,
+      id: 21,
       title: 'Wendie & Frais Body Sprays',
       category: 'Fragrances & Flavours',
       description: 'Personal body spray lines distributed directly across major supermarkets and outlets.',
@@ -73,7 +177,7 @@ export default function GalleryPage() {
       brochure: '/brochures/Body_Sprays_Retail.pdf'
     },
     {
-      id: 9,
+      id: 22,
       title: 'PULS Sports Nutrition',
       category: 'Consumer Goods',
       description: 'Whey protein isolates, workout supplement packs, and brand shakers for athletes.',
