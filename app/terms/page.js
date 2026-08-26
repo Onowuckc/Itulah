@@ -16,7 +16,7 @@ export default function TermsPage() {
       </p>
       <h3 style={{ fontSize: '20px', margin: '30px 0 10px', color: 'white' }}>2. Intellectual Property</h3>
       <p style={{ marginBottom: '20px' }}>
-        Contents of this site, including images for Wild Octopus Liqueur, CCTV camera descriptions, and PULS nutrition brands, are intellectual properties of Itulah Nigeria Limited (formerly Mikado Nigeria Limited) or its partners.
+        Contents of this site, including images for Wild Octopus Liqueur, fine fragrances, and PULS nutrition brands, are intellectual properties of Itulah Nigeria Limited or its partners.
       </p>
     </div>
   );

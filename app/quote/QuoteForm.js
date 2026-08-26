@@ -12,7 +12,7 @@ export default function QuoteForm() {
     name: '',
     email: '',
     phone: '',
-    productType: 'CCTV & Surveillance',
+    productType: 'Beverages & Spirits',
     subject: '',
     message: ''
   });
@@ -38,18 +38,6 @@ export default function QuoteForm() {
     const name = prodName.toLowerCase();
     if (name.includes('octopus') || name.includes('liqueur') || name.includes('whiskey') || name.includes('gin') || name.includes('beverage')) {
       return 'Beverages & Spirits';
-    }
-    if (name.includes('camera') || name.includes('cctv') || name.includes('dvr') || name.includes('nvr') || name.includes('surveillance')) {
-      return 'CCTV & Surveillance';
-    }
-    if (name.includes('lock') || name.includes('padlock') || name.includes('keygarage') || name.includes('keysafe') || name.includes('handle') || name.includes('cylinder')) {
-      return 'Locks & Physical Hardware';
-    }
-    if (name.includes('fire') || name.includes('smoke') || name.includes('bell') || name.includes('sprinkler') || name.includes('alarm')) {
-      return 'Fire Safety & Alarms';
-    }
-    if (name.includes('samsung') || name.includes('gigaset') || name.includes('panasonic') || name.includes('pabx') || name.includes('phone') || name.includes('telephony')) {
-      return 'Telecommunications & PABX';
     }
     if (name.includes('fragrance') || name.includes('spray') || name.includes('perfume') || name.includes('frais') || name.includes('wendie') || name.includes('aroma')) {
       return 'Fragrances & Personal Care';
@@ -105,7 +93,7 @@ export default function QuoteForm() {
           name: '',
           email: '',
           phone: '',
-          productType: 'CCTV & Surveillance',
+          productType: 'Beverages & Spirits',
           subject: '',
           message: ''
         });
@@ -186,15 +174,9 @@ export default function QuoteForm() {
               value={formData.productType}
               onChange={handleChange}
             >
-              <option value="CCTV & Surveillance">CCTV & Surveillance</option>
-              <option value="Locks & Physical Hardware">Locks & Physical Hardware</option>
-              <option value="Fire Safety & Alarms">Fire Safety & Alarms</option>
-              <option value="Telecommunications & PABX">Telecommunications & PABX</option>
-              <option value="Intruder Alarm Systems">Intruder Alarm Systems</option>
-              <option value="Fragrances & Personal Care">Fragrances & Personal Care</option>
-              <option value="Cleaning & Industrial Solutions">Cleaning & Industrial Solutions</option>
-              <option value="PULS Nutrition">PULS Nutrition</option>
               <option value="Beverages & Spirits">Beverages & Spirits</option>
+              <option value="Fragrances & Personal Care">Fragrances & Personal Care</option>
+              <option value="PULS Nutrition">PULS Nutrition</option>
               <option value="General Enquiry">General Enquiry</option>
             </select>
           </div>
@@ -208,7 +190,7 @@ export default function QuoteForm() {
             name="subject"
             className={styles.input}
             required
-            placeholder="e.g. CCTV installation quote for warehouse"
+            placeholder="e.g. Bulk Wild Octopus Liqueur order"
             value={formData.subject}
             onChange={handleChange}
           />

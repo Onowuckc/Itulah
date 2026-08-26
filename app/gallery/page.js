@@ -29,7 +29,7 @@ export default function GalleryPage() {
       title: 'Wild Octopus Premium Craft Bottle',
       category: 'Beverages',
       description: 'Exclusive custom label branding and crystal glass craft presentation for Wild Octopus.',
-      image: '/img/WildOctopus.png',
+      image: '/img/wildOctopus1.jpeg',
       brochure: '/brochures/Wild_Octopus_Beverages.pdf'
     },
     {
@@ -135,38 +135,6 @@ export default function GalleryPage() {
       description: 'Imported and locally blended spirits including Country Pride gin, classic and cinnamon whiskeys.',
       image: '/img/alcoholic beverages.png',
       brochure: '/brochures/Country_Pride_Spirits.pdf'
-    },
-    {
-      id: 17,
-      title: 'CCTV & Surveillance Cameras',
-      category: 'Security Solutions',
-      description: 'Full range of smart IP cameras, pan-tilt-zoom directional cameras, covert recorders, and network interfaces.',
-      image: '/img/cctv.png',
-      brochure: '/brochures/CCTV_Surveillance_Solutions.pdf'
-    },
-    {
-      id: 18,
-      title: 'Locks & Physical Hardware',
-      category: 'Security Solutions',
-      description: 'German-engineered padlocks, container lock systems, mortice handles, and combination lockboxes.',
-      image: '/img/physical locks.png',
-      brochure: '/brochures/Locks_Physical_Security.pdf'
-    },
-    {
-      id: 19,
-      title: 'Fire Alarm & Safety Detection',
-      category: 'Fire Safety',
-      description: 'Optical smoke detectors, wireless trigger stations, extinguishers, panels, and heat warning bells.',
-      image: '/img/FireAlarm.png',
-      brochure: '/brochures/Fire_Safety_Systems.pdf'
-    },
-    {
-      id: 20,
-      title: 'Telecommunication (PABX Landline)',
-      category: 'Telecommunications',
-      description: 'Samsung and Gigaset office PBX telephone interfaces, IP handsets, and modular control stations.',
-      image: '/img/communicationAndLandline.png',
-      brochure: '/brochures/PABX_Telephony_Catalog.pdf'
     },
     {
       id: 21,

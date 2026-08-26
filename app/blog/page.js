@@ -5,7 +5,7 @@ import styles from './page.module.css';
 
 export const metadata = {
   title: "Blog & Industry News | Itulah Nigeria Limited",
-  description: "Stay updated with recent articles and industry tips from Itulah Nigeria Limited: how to choose security cameras, premium beverages recipes, and fragrance guides.",
+  description: "Stay updated with recent articles and industry tips from Itulah Nigeria Limited: premium beverage recipes and fragrance guides.",
 };
 
 export const dynamic = 'force-dynamic';
@@ -28,7 +28,7 @@ export default function BlogPage() {
     <div className={styles.container}>
       <div className={styles.titleSection}>
         <h1 className={styles.title}>Blog & Corporate News</h1>
-        <p className={styles.subtitle}>Insights from our security experts and product catalog specialists</p>
+        <p className={styles.subtitle}>Insights from our brand specialists and product catalog teams</p>
       </div>
 
       <div className={styles.grid}>

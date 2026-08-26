@@ -19,7 +19,7 @@ export default function Home() {
           </h1>
 
           <p className={styles.description}>
-            Itulah Nigeria Limited (formerly Mikado Nigeria Limited) delivers world-class electronic security, premium beverages, telecommunications infrastructure, and fine fragrances across the nation.
+            Itulah Nigeria Limited delivers premium spirits & beverages, fine fragrances, body sprays, and PULS nutrition supplements across the nation.
           </p>
 
           <div className={styles.ctas}>
@@ -46,7 +46,7 @@ export default function Home() {
                 Since our inception on 1st January 1989, Itulah Nigeria Limited has been endowed with a successful history of providing quality services to a vast array of private and public sector clients.
               </p>
               <p>
-                From electronic security to telecommunications, and fragrance & flavours distribution, we have grown rapidly by responding proactively to market needs. Customer satisfaction and consistent delivery of high-quality solutions are essential to our philosophy.
+                From premium beverages to fine fragrance & flavours distribution and sports nutrition, we have grown rapidly by responding proactively to market needs. Customer satisfaction and consistent delivery of high-quality solutions are essential to our philosophy.
               </p>
               <div className={styles.introStats}>
                 <div>
@@ -66,8 +66,8 @@ export default function Home() {
 
             <div className={styles.introVisual}>
               <Image
-                src="/img/cctv.png"
-                alt="Itulah Legacy Security and Infrastructure"
+                src="/img/wildOctopus1.jpeg"
+                alt="Itulah Premium Beverages and Fine Products"
                 fill
                 sizes="(max-width: 992px) 100vw, 50vw"
                 style={{ objectFit: 'cover' }}
@@ -75,7 +75,7 @@ export default function Home() {
               />
               <div className={styles.imageOverlay}></div>
               <div className={styles.visualCaption}>
-                <h4 className={styles.visualTitle}>Lagos Head Office & Monitoring Hub</h4>
+                <h4 className={styles.visualTitle}>Lagos Head Office & Distribution Hub</h4>
               </div>
             </div>
           </div>
@@ -116,35 +116,13 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Division 2: Security */}
-            <div className={`${styles.divCard} glass-card`}>
-              <Image
-                src="/img/physical locks.png"
-                alt="Security Solutions"
-                fill
-                sizes="(max-width: 992px) 100vw, 33vw"
-                className={styles.cardBg}
-                style={{ objectFit: 'cover' }}
-              />
-              <div className={styles.cardGradient}></div>
-              <div className={styles.cardContent}>
-                <h3 className={styles.cardTitle}>Security Solutions</h3>
-                <p className={styles.cardDesc}>
-                  Advanced CCTV, intrusion alarms, access control systems, fire safety devices, and high-security German physical lock fittings.
-                </p>
-                <Link href="/products?cat=cctv" className={styles.cardLink}>
-                  View Products &rarr;
-                </Link>
-              </div>
-            </div>
-
-            {/* Division 3: Fragrances & Telecom */}
+            {/* Division 2: Fragrances */}
             <div className={`${styles.divCard} glass-card`}>
               <Image
                 src="/img/fragrance1.jpeg"
                 alt="Flavours & Fragrances"
                 fill
-                sizes="(max-width: 992px) 100vw, 33vw"
+                sizes="(max-width: 992px) 100vw, 50vw"
                 className={styles.cardBg}
                 style={{ objectFit: 'cover' }}
               />
@@ -187,31 +165,8 @@ export default function Home() {
             </div>
             <div className={styles.bannerImageWrapper}>
               <Image
-                src="/img/WildOctopus.png"
+                src="/img/wildOctopus1.jpeg"
                 alt="Wild Octopus Liqueur"
-                fill
-                sizes="(max-width: 992px) 100vw, 50vw"
-                style={{ objectFit: 'cover' }}
-              />
-            </div>
-          </div>
-
-          {/* Banner 2: Security & CCTV */}
-          <div className={`${styles.bannerCard} ${styles.bannerCardAlt}`}>
-            <div className={styles.bannerText}>
-              <span className={styles.bannerCategory} style={{ color: '#00f0ff' }}>Protection & Defense • CCTV</span>
-              <h3 className={styles.bannerTitle}>Smart Surveillance Systems</h3>
-              <p className={styles.bannerDesc}>
-                Professional CCTV installation, smart doors, combination locks, and complete commercial intrusion panels. We design custom monitoring grids to keep your home, containers, and office premises safe.
-              </p>
-              <Link href="/products?cat=cctv" className={styles.primaryCta}>
-                Explore CCTV Systems
-              </Link>
-            </div>
-            <div className={styles.bannerImageWrapper}>
-              <Image
-                src="/img/cctv.png"
-                alt="Surveillance Systems"
                 fill
                 sizes="(max-width: 992px) 100vw, 50vw"
                 style={{ objectFit: 'cover' }}
@@ -249,7 +204,7 @@ export default function Home() {
         <div className={styles.ctaContainer}>
           <h2 className={styles.ctaTitle}>Ready to Elevate Your Business or Lifestyle?</h2>
           <p className={styles.ctaDesc}>
-            Get in touch with our team of technical experts and product specialists to procure custom-fit security installations, premium spirits, or bulk ingredient fragrances.
+            Get in touch with our team of technical experts and product specialists to procure premium spirits, fine fragrances, or nutritional supplements.
           </p>
           <div className={styles.ctaButtons}>
             <Link href="/quote" className={styles.primaryCta}>

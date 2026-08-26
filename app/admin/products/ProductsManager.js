@@ -90,13 +90,8 @@ export default function ProductsManager({ initialProducts }) {
 
   const categories = [
     { id: 'beverages', name: 'Beverages' },
-    { id: 'cctv', name: 'CCTV Systems' },
-    { id: 'locks', name: 'Physical Security' },
-    { id: 'fire', name: 'Fire Safety' },
-    { id: 'telephony', name: 'Telephony & PABX' },
     { id: 'fragrance', name: 'Fragrances' },
-    { id: 'nutrition', name: 'PULS Nutrition' },
-    { id: 'cleaning', name: 'Cleaning Brands' }
+    { id: 'nutrition', name: 'PULS Nutrition' }
   ];
 
   const handleInputChange = (e) => {
@@ -317,7 +312,6 @@ export default function ProductsManager({ initialProducts }) {
                     <optgroup label="Wild Octopus Images">
                       <option value="/img/wildOctopus1.jpeg">Wild Octopus 1 (/img/wildOctopus1.jpeg)</option>
                       <option value="/img/WildOctopus2.jpeg">Wild Octopus 2 (/img/WildOctopus2.jpeg)</option>
-                      <option value="/img/WildOctopus.png">Wild Octopus PNG (/img/WildOctopus.png)</option>
                     </optgroup>
                     <optgroup label="Fragrance Collection">
                       <option value="/img/fragrance1.jpeg">Fragrance 1 (/img/fragrance1.jpeg)</option>
@@ -336,10 +330,6 @@ export default function ProductsManager({ initialProducts }) {
                     </optgroup>
                     <optgroup label="Other Vertical Images">
                       <option value="/img/alcoholic beverages.png">Spirits & Beverages (/img/alcoholic beverages.png)</option>
-                      <option value="/img/cctv.png">CCTV (/img/cctv.png)</option>
-                      <option value="/img/physical locks.png">Physical Locks (/img/physical locks.png)</option>
-                      <option value="/img/FireAlarm.png">Fire Alarm (/img/FireAlarm.png)</option>
-                      <option value="/img/communicationAndLandline.png">Telephony (/img/communicationAndLandline.png)</option>
                       <option value="/img/Nutrition.png">Nutrition (/img/Nutrition.png)</option>
                     </optgroup>
                   </select>

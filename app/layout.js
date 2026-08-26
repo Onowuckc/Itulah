@@ -13,26 +13,17 @@ export const viewport = {
 export const metadata = {
   metadataBase: new URL("https://itulah.com.ng"),
   title: {
-    default: "Itulah Nigeria Limited | CCTV Installation, Wild Octopus Liqueur & Fragrance Solutions",
+    default: "Itulah Nigeria Limited | Wild Octopus Liqueur, Fragrance & Nutrition Solutions",
     template: "%s | Itulah Nigeria Limited",
   },
-  description: "Itulah Nigeria Limited (formerly Mikado Nigeria Limited) provides professional CCTV installation in Nigeria, Wild Octopus Liqueur, electronic security, PABX communication systems, fine fragrances, and PULS Nutrition supplements since 1989.",
+  description: "Itulah Nigeria Limited provides Wild Octopus Liqueur, fine fragrances, body sprays, and PULS Nutrition supplements across Nigeria since 1989.",
   keywords: [
     "Wild Octopus Liqueur",
-    "CCTV installation in Nigeria",
     "Itulah Nigeria Limited",
-    "Mikado Nigeria Limited",
-    "Security solutions Lagos",
-    "PABX Samsung systems Nigeria",
     "Fragrance products Nigeria",
     "PULS Nutrition Nigeria",
     "Country Pride Gin",
-    "Spiced Whiskey Nigeria",
-    "Industrial cleaning solutions Nigeria",
-    "Abus locks Nigeria",
-    "Smart home security Lagos",
-    "Access control systems Lagos",
-    "Intrusion alarm installation Nigeria"
+    "Spiced Whiskey Nigeria"
   ],
   authors: [{ name: "Itulah Nigeria Limited" }],
   creator: "Itulah Nigeria Limited",
@@ -52,18 +43,12 @@ export const metadata = {
     type: "website",
     locale: "en_NG",
     url: "https://itulah.com.ng",
-    title: "Itulah Nigeria Limited | Wild Octopus Liqueur & CCTV Installation in Nigeria",
-    description: "Delivering world-class security solutions, CCTV installation in Nigeria, premium alcoholic beverages like Wild Octopus Liqueur, fine fragrances, and nutrition supplements since 1989.",
+    title: "Itulah Nigeria Limited | Wild Octopus Liqueur & Fine Fragrances",
+    description: "Delivering premium alcoholic beverages like Wild Octopus Liqueur, fine fragrances, and nutrition supplements since 1989.",
     siteName: "Itulah Nigeria Limited",
     images: [
       {
-        url: "/img/cctv.png",
-        width: 1200,
-        height: 630,
-        alt: "Itulah Nigeria Limited - CCTV Installation & Security Solutions",
-      },
-      {
-        url: "/img/WildOctopus.png",
+        url: "/img/wildOctopus1.jpeg",
         width: 1200,
         height: 630,
         alt: "Wild Octopus Liqueur - Itulah Nigeria Limited",
@@ -72,9 +57,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Itulah Nigeria Limited | CCTV Installation & Wild Octopus Liqueur",
-    description: "Nigeria's trusted enterprise for CCTV installation, Wild Octopus Liqueur, security solutions, and fine fragrances.",
-    images: ["/img/cctv.png"],
+    title: "Itulah Nigeria Limited | Wild Octopus Liqueur & Fine Fragrances",
+    description: "Nigeria's trusted enterprise for Wild Octopus Liqueur, fine fragrances, and nutrition supplements.",
+    images: ["/img/wildOctopus1.jpeg"],
   },
   alternates: {
     canonical: "https://itulah.com.ng",
@@ -90,11 +75,10 @@ export default function RootLayout({ children }) {
         "@type": "Organization",
         "@id": "https://itulah.com.ng/#organization",
         "name": "Itulah Nigeria Limited",
-        "alternateName": "Mikado Nigeria Limited",
         "url": "https://itulah.com.ng",
         "logo": "https://itulah.com.ng/img/logo.png",
         "foundingDate": "1989-01-01",
-        "description": "Leading Nigerian enterprise specializing in electronic security, CCTV installation in Nigeria, Wild Octopus Liqueur distribution, PABX systems, and fine fragrances.",
+        "description": "Leading Nigerian enterprise specializing in Wild Octopus Liqueur distribution, fine fragrances, and PULS nutrition supplements.",
         "contactPoint": {
           "@type": "ContactPoint",
           "telephone": "+234-807-963-5408",
@@ -107,7 +91,7 @@ export default function RootLayout({ children }) {
         "@type": "LocalBusiness",
         "@id": "https://itulah.com.ng/#localbusiness",
         "name": "Itulah Nigeria Limited",
-        "image": "https://itulah.com.ng/img/cctv.png",
+        "image": "https://itulah.com.ng/img/wildOctopus1.jpeg",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Plot 4 block 11 prince adesoji ajose street ogudu phase 2",

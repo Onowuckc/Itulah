@@ -4,7 +4,7 @@ import ProductList from './ProductList';
 
 export const metadata = {
   title: "Products & Services | Itulah Nigeria Limited",
-  description: "Browse the complete range of products offered by Itulah Nigeria Limited: CCTV camera installations, PABX systems, high security Abus locks, Wild Octopus Liqueur, fine perfumes, body sprays, and nutrition supplements.",
+  description: "Browse the complete range of products offered by Itulah Nigeria Limited: Wild Octopus Liqueur, fine perfumes, body sprays, and PULS nutrition supplements.",
 };
 
 export const dynamic = 'force-dynamic';

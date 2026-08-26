@@ -44,13 +44,8 @@ export default function ProductList({ initialProducts }) {
   const categories = [
     { id: 'all', name: 'All Products' },
     { id: 'beverages', name: 'Beverages' },
-    { id: 'cctv', name: 'CCTV Systems' },
-    { id: 'locks', name: 'Physical Security' },
-    { id: 'fire', name: 'Fire Safety' },
-    { id: 'telephony', name: 'Telephony & PABX' },
     { id: 'fragrance', name: 'Fragrances' },
-    { id: 'nutrition', name: 'PULS Nutrition' },
-    { id: 'cleaning', name: 'Cleaning Brands' }
+    { id: 'nutrition', name: 'PULS Nutrition' }
   ];
 
   // Filter products by category and search query

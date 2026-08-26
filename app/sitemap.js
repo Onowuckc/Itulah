@@ -21,10 +21,6 @@ export default async function sitemap() {
   // Dynamic product categories & keywords for SEO
   const productCategories = [
     '?cat=beverages',
-    '?cat=cctv',
-    '?cat=locks',
-    '?cat=fire',
-    '?cat=telephony',
     '?cat=fragrance',
     '?cat=nutrition',
   ].map((cat) => ({

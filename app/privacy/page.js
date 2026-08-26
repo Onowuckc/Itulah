@@ -8,7 +8,7 @@ export default function PrivacyPage() {
       <h1 style={{ fontFamily: 'var(--font-display)', fontSize: '36px', marginBottom: '24px', color: 'var(--color-accent)' }}>Privacy Policy</h1>
       <p style={{ marginBottom: '16px' }}>Effective Date: July 17, 2026</p>
       <p style={{ marginBottom: '20px' }}>
-        Itulah Nigeria Limited (formerly known as Mikado Nigeria Limited) respects your privacy. We collect details through enquiry and contact forms to process your quotation request and supply product sheets.
+        Itulah Nigeria Limited respects your privacy. We collect details through enquiry and contact forms to process your quotation request and supply product sheets.
       </p>
       <h3 style={{ fontSize: '20px', margin: '30px 0 10px', color: 'white' }}>1. Information Collection</h3>
       <p style={{ marginBottom: '20px' }}>
@@ -16,7 +16,7 @@ export default function PrivacyPage() {
       </p>
       <h3 style={{ fontSize: '20px', margin: '30px 0 10px', color: 'white' }}>2. Information Use</h3>
       <p style={{ marginBottom: '20px' }}>
-        Collected information is utilized strictly to provide quotes, establish contracts for CCTV/locks installations, or ship beverages/nutrients. We do not sell or lease database entries.
+        Collected information is utilized strictly to provide quotes, process orders, or ship beverages, fragrances, and nutrients. We do not sell or lease database entries.
       </p>
     </div>
   );

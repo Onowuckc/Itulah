@@ -10,7 +10,6 @@ export default function Footer() {
 
   const socialLinks = [
     { name: 'PULS Nutrition', handle: '@Pulsnutrition_nigeria', url: 'https://instagram.com/Pulsnutrition_nigeria' },
-    { name: 'Mikado MSC', handle: '@mikadomsc', url: 'https://instagram.com/mikadomsc' },
     { name: 'Mikraid NG', handle: '@mikraidng', url: 'https://instagram.com/mikraidng' },
     { name: 'Wild Octopus', handle: '@wildoctopus_mikraid', url: 'https://instagram.com/wildoctopus_mikraid' },
     { name: 'Country Pride', handle: '@countrypride_mikraid', url: 'https://instagram.com/countrypride_mikraid' },
@@ -23,7 +22,7 @@ export default function Footer() {
         <div className={styles.column}>
           <h3 className={styles.brandTitle}>ITULAH</h3>
           <p className={styles.brandText}>
-            Itulah Nigeria Limited (formerly Mikado Nigeria Limited) is a highly diversified, multi-faceted organization dedicated to delivering premium lifestyles, advanced security installations, telecommunications, and high-quality consumer products across Nigeria since 1989.
+            Itulah Nigeria Limited is a highly diversified organization dedicated to delivering premium spirits & beverages, fine fragrances, and high-quality consumer products across Nigeria since 1989.
           </p>
         </div>
 
@@ -91,7 +90,7 @@ export default function Footer() {
       <div className={styles.bottomBar}>
         <div className={styles.bottomContainer}>
           <p className={styles.copyright}>
-            &copy; {currentYear} Itulah Nigeria Limited. All rights reserved. Formerly known as Mikado Nigeria Limited.
+            &copy; {currentYear} Itulah Nigeria Limited. All rights reserved.
           </p>
           <div className={styles.legalLinks}>
             <Link href="/privacy">Privacy Policy</Link>

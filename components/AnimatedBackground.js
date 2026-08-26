@@ -131,7 +131,7 @@ export default function AnimatedBackground() {
     const imageFiles = [
       { url: '/img/wildOctopus1.jpeg', aspect: 1.0, type: 'octopus' },
       { url: '/img/WildOctopus2.jpeg', aspect: 1.0, type: 'octopus' },
-      { url: '/img/WildOctopus.png', aspect: 0.8, type: 'octopus' },
+      { url: '/img/wildOctopus1.jpeg', aspect: 0.8, type: 'octopus' },
       { url: '/img/fragrance1.jpeg', aspect: 1.0, type: 'fragrance' },
       { url: '/img/Fragrance2.jpeg', aspect: 1.0, type: 'fragrance' },
       { url: '/img/Fragrance3.jpeg', aspect: 1.0, type: 'fragrance' },
@@ -362,8 +362,8 @@ export default function AnimatedBackground() {
         }}
       />
       <div className="bg-ambient-light" />
-      <div className="bg-layer bg-layer-1" title="Security & Tech Matrix Grid (background1.jpg)" />
-      <div className="bg-layer bg-layer-2" title="Azure Steel & Telecom Texture (background2.jpg)" />
+      <div className="bg-layer bg-layer-1" title="Matrix Grid (background1.jpg)" />
+      <div className="bg-layer bg-layer-2" title="Azure Steel Texture (background2.jpg)" />
       <div className="bg-layer bg-layer-3" title="Liquid Gold & Fragrance Curves (background3.jpg)" />
       <div className="bg-overlay" />
     </div>

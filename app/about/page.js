@@ -3,7 +3,7 @@ import styles from './page.module.css';
 
 export const metadata = {
   title: "About Us | Itulah Nigeria Limited",
-  description: "Learn more about Itulah Nigeria Limited (formerly Mikado Nigeria Limited). Discover our history since 1989, our corporate vision, mission, and core professional values.",
+  description: "Learn more about Itulah Nigeria Limited. Discover our history since 1989, our corporate vision, mission, and core professional values.",
 };
 
 export default function About() {
@@ -28,8 +28,8 @@ export default function About() {
         <section className={styles.historyBlock}>
           <div className={styles.imageWrapper}>
             <Image
-              src="/img/cctv.png"
-              alt="Itulah Nigeria Limited Office"
+              src="/img/wildOctopus1.jpeg"
+              alt="Itulah Nigeria Limited Office & Products"
               fill
               sizes="(max-width: 900px) 100vw, 40vw"
               style={{ objectFit: 'cover' }}
@@ -38,10 +38,10 @@ export default function About() {
           <div className={styles.historyText}>
             <h2>Our Journey Since 1989</h2>
             <p>
-              Since inception, Itulah Nigeria Limited (formerly known as Mikado Nigeria Limited) has been endowed with a successful history of providing quality services to a vast array of private and public sector clients.
+              Since inception, Itulah Nigeria Limited has been endowed with a successful history of providing quality services to a vast array of private and public sector clients.
             </p>
             <p>
-              We commenced business on 1st January, 1989 and have consistently embarked on a series of dynamic and diversified business expansion initiatives. Ever since, we have gone on to grow highly successful businesses in sectors ranging from electronic security and telecommunications to fragrance and flavours distribution.
+              We commenced business on 1st January, 1989 and have consistently embarked on a series of dynamic and diversified business expansion initiatives. Ever since, we have gone on to grow highly successful businesses in sectors ranging from premium beverages and sports nutrition to fragrance and flavours distribution.
             </p>
             <p>
               We have grown rapidly with the ability to create and respond directly to market opportunities. Customer satisfaction and consistent delivery of high-quality solutions are essential to our philosophy, and we approach all of our projects in the same proven manner.
