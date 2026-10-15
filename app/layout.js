@@ -11,7 +11,7 @@ export const viewport = {
 };
 
 export const metadata = {
-  metadataBase: new URL("https://itulah.com.ng"),
+  metadataBase: new URL("https://www.itulahng.com"),
   title: {
     default: "Itulah Nigeria Limited | Wild Octopus Liqueur, Fragrance & Nutrition Solutions",
     template: "%s | Itulah Nigeria Limited",
@@ -42,7 +42,7 @@ export const metadata = {
   openGraph: {
     type: "website",
     locale: "en_NG",
-    url: "https://itulah.com.ng",
+    url: "https://www.itulahng.com",
     title: "Itulah Nigeria Limited | Wild Octopus Liqueur & Fine Fragrances",
     description: "Delivering premium alcoholic beverages like Wild Octopus Liqueur, fine fragrances, and nutrition supplements since 1989.",
     siteName: "Itulah Nigeria Limited",
@@ -62,7 +62,7 @@ export const metadata = {
     images: ["/img/wildOctopus1.jpeg"],
   },
   alternates: {
-    canonical: "https://itulah.com.ng",
+    canonical: "https://www.itulahng.com",
   },
 };
 
@@ -73,10 +73,10 @@ export default function RootLayout({ children }) {
     "@graph": [
       {
         "@type": "Organization",
-        "@id": "https://itulah.com.ng/#organization",
+        "@id": "https://www.itulahng.com/#organization",
         "name": "Itulah Nigeria Limited",
-        "url": "https://itulah.com.ng",
-        "logo": "https://itulah.com.ng/img/logo.png",
+        "url": "https://www.itulahng.com",
+        "logo": "https://www.itulahng.com/img/logo.png",
         "foundingDate": "1989-01-01",
         "description": "Leading Nigerian enterprise specializing in Wild Octopus Liqueur distribution, fine fragrances, and PULS nutrition supplements.",
         "contactPoint": {
@@ -89,9 +89,9 @@ export default function RootLayout({ children }) {
       },
       {
         "@type": "LocalBusiness",
-        "@id": "https://itulah.com.ng/#localbusiness",
+        "@id": "https://www.itulahng.com/#localbusiness",
         "name": "Itulah Nigeria Limited",
-        "image": "https://itulah.com.ng/img/wildOctopus1.jpeg",
+        "image": "https://www.itulahng.com/img/wildOctopus1.jpeg",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Plot 4 block 11 prince adesoji ajose street ogudu phase 2",
@@ -103,11 +103,11 @@ export default function RootLayout({ children }) {
       },
       {
         "@type": "WebSite",
-        "@id": "https://itulah.com.ng/#website",
-        "url": "https://itulah.com.ng",
+        "@id": "https://www.itulahng.com/#website",
+        "url": "https://www.itulahng.com",
         "name": "Itulah Nigeria Limited",
         "publisher": {
-          "@id": "https://itulah.com.ng/#organization"
+          "@id": "https://www.itulahng.com/#organization"
         }
       }
     ]

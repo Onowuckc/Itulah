@@ -1,5 +1,5 @@
 export default async function sitemap() {
-  const baseUrl = 'https://itulah.com.ng';
+  const baseUrl = 'https://www.itulahng.com';
 
   const staticRoutes = [
     '',

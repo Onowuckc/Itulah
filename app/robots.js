@@ -7,6 +7,6 @@ export default function robots() {
         disallow: ['/admin/', '/api/admin/'],
       },
     ],
-    sitemap: 'https://itulah.com.ng/sitemap.xml',
+    sitemap: 'https://www.itulahng.com/sitemap.xml',
   };
 }
