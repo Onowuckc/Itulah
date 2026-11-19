@@ -10,27 +10,27 @@ export default function GalleryPage() {
   const galleryItems = [
     {
       id: 1,
-      title: 'Wild Octopus Herbal Liqueur (Original Edition)',
+      title: 'Wild Octopus Hibiscus Liqueur (250 ml)',
       category: 'Beverages',
-      description: 'The iconic bottle design and signature botanical blend of Wild Octopus Liqueur.',
-      image: '/img/wildOctopus1.jpeg',
-      brochure: '/brochures/Wild_Octopus_Beverages.pdf'
+      description: 'The iconic 250ml bottle design and signature botanical blend of Wild Octopus Hibiscus Liqueur (12 x 250ml per carton).',
+      image: '/img/sku_001_wild_octopus_250ml_clean.png',
+      brochure: '/brochure_beverages.pdf'
     },
     {
       id: 2,
-      title: 'Wild Octopus Special Reserve',
+      title: 'Wild Octopus Hibiscus Liqueur (750 ml)',
       category: 'Beverages',
-      description: 'Premium barrel-matured herbal liqueur crafted for celebration and luxury nightlife.',
-      image: '/img/WildOctopus2.jpeg',
-      brochure: '/brochures/Wild_Octopus_Beverages.pdf'
+      description: 'Premium 750ml hibiscus-infused liqueur crafted for celebration, events, and luxury nightlife (6 x 750ml per carton).',
+      image: '/img/sku_002_wild_octopus_750ml_clean.png',
+      brochure: '/brochure_beverages.pdf'
     },
     {
       id: 3,
-      title: 'Wild Octopus Premium Craft Bottle',
+      title: 'Country Pride Gin (750 ml)',
       category: 'Beverages',
-      description: 'Exclusive custom label branding and crystal glass craft presentation for Wild Octopus.',
-      image: '/img/wildOctopus1.jpeg',
-      brochure: '/brochures/Wild_Octopus_Beverages.pdf'
+      description: 'Clean botanical notes and crisp finish, perfect for classic cocktails or neat service (6 x 750ml per carton).',
+      image: '/img/sku_003_country_pride_gin_clean.png',
+      brochure: '/brochure_beverages.pdf'
     },
     {
       id: 4,
@@ -130,11 +130,19 @@ export default function GalleryPage() {
     },
     {
       id: 16,
-      title: 'Alcoholic Beverages Collection',
+      title: 'Country Pride Whiskey (750 ml)',
       category: 'Beverages',
-      description: 'Imported and locally blended spirits including Country Pride gin, classic and cinnamon whiskeys.',
-      image: '/img/alcoholic beverages.png',
-      brochure: '/brochures/Country_Pride_Spirits.pdf'
+      description: 'Classic barrel-aged whiskey with rich oak and caramel notes (6 x 750ml per carton).',
+      image: '/img/sku_004_country_pride_whiskey_clean.png',
+      brochure: '/brochure_beverages.pdf'
+    },
+    {
+      id: 17,
+      title: 'Country Pride Whiskey Cinnamon (750 ml)',
+      category: 'Beverages',
+      description: 'Fiery, spiced cinnamon whiskey delivering an unforgettable smooth warmth (6 x 750ml per carton).',
+      image: '/img/sku_005_country_pride_whiskey_cinnamon_clean.png',
+      brochure: '/brochure_beverages.pdf'
     },
     {
       id: 21,

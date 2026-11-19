@@ -309,6 +309,13 @@ export default function ProductsManager({ initialProducts }) {
                     style={{ marginTop: '8px', width: '100%' }}
                   >
                     <option value="">-- Select Preset Image --</option>
+                    <optgroup label="Beverages Catalogue (Oct 2026)">
+                      <option value="/img/sku_001_wild_octopus_250ml_clean.png">SKU 001 - Wild Octopus 250ml (/img/sku_001_wild_octopus_250ml_clean.png)</option>
+                      <option value="/img/sku_002_wild_octopus_750ml_clean.png">SKU 002 - Wild Octopus 750ml (/img/sku_002_wild_octopus_750ml_clean.png)</option>
+                      <option value="/img/sku_003_country_pride_gin_clean.png">SKU 003 - Country Pride Gin (/img/sku_003_country_pride_gin_clean.png)</option>
+                      <option value="/img/sku_004_country_pride_whiskey_clean.png">SKU 004 - Country Pride Whiskey (/img/sku_004_country_pride_whiskey_clean.png)</option>
+                      <option value="/img/sku_005_country_pride_whiskey_cinnamon_clean.png">SKU 005 - Country Pride Whiskey Cinnamon (/img/sku_005_country_pride_whiskey_cinnamon_clean.png)</option>
+                    </optgroup>
                     <optgroup label="Wild Octopus Images">
                       <option value="/img/wildOctopus1.jpeg">Wild Octopus 1 (/img/wildOctopus1.jpeg)</option>
                       <option value="/img/WildOctopus2.jpeg">Wild Octopus 2 (/img/WildOctopus2.jpeg)</option>
