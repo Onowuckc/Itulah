@@ -64,6 +64,14 @@ export const metadata = {
   alternates: {
     canonical: "https://www.itulahng.com",
   },
+  icons: {
+    icon: [
+      { url: "/img/logo.png" },
+      { url: "/favicon.png" },
+    ],
+    apple: "/img/logo.png",
+    shortcut: "/img/logo.png",
+  },
 };
 
 export default function RootLayout({ children }) {
