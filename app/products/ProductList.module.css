@@ -56,8 +56,8 @@
 
 .searchInput:focus {
   outline: none;
-  border-color: var(--color-cyan);
-  box-shadow: 0 0 20px rgba(0, 240, 255, 0.3);
+  border-color: var(--color-electric-sky);
+  box-shadow: 0 0 20px rgba(0, 229, 255, 0.3);
 }
 
 .searchIcon {
@@ -65,7 +65,7 @@
   left: 18px;
   top: 50%;
   transform: translateY(-50%);
-  color: var(--color-cyan);
+  color: var(--color-electric-sky);
 }
 
 /* Category Filter Tabs */
@@ -133,8 +133,8 @@
 
 .imageWrapper {
   position: relative;
-  height: 230px;
-  background-color: rgba(8, 12, 20, 0.85);
+  height: 250px;
+  background: linear-gradient(135deg, #ffffff 0%, #e2e8f0 100%);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -266,5 +266,13 @@
   .tabButton {
     font-size: 12px;
     padding: 8px 14px;
+  }
+  .cardFooter {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .actionsGroup {
+    flex-wrap: wrap;
   }
 }

@@ -12,6 +12,19 @@
   overflow: hidden;
 }
 
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    90deg,
+    rgba(7, 13, 24, 0.96) 0%,
+    rgba(7, 13, 24, 0.88) 58%,
+    rgba(7, 13, 24, 0.72) 100%
+  );
+}
+
 .heroContent {
   max-width: 1200px;
   margin: 0 auto;
@@ -80,7 +93,7 @@
 .description {
   font-size: 20px;
   line-height: 1.7;
-  color: var(--color-text-secondary);
+  color: var(--color-text-muted-light);
   max-width: 680px;
   margin-bottom: 40px;
 }
@@ -208,7 +221,7 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 3px;
-  color: var(--color-cyan);
+  color: var(--color-electric-sky);
   text-shadow: 0 0 10px rgba(0, 240, 255, 0.4);
   display: inline-block;
   margin-bottom: 8px;
@@ -309,7 +322,7 @@
 
 .divisionGrid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 30px;
 }
 
@@ -639,7 +652,10 @@
   .introVisual {
     height: 380px;
   }
-  .divisionGrid, .bgShowcaseGrid {
+  .divisionGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .bgShowcaseGrid {
     grid-template-columns: 1fr;
   }
   .divCard {
@@ -657,6 +673,9 @@
 }
 
 @media (max-width: 768px) {
+  .divisionGrid {
+    grid-template-columns: 1fr;
+  }
   .title {
     font-size: 38px;
   }

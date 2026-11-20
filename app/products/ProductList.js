@@ -75,6 +75,7 @@ export default function ProductList({ initialProducts }) {
           <input
             type="text"
             placeholder="Search products..."
+            aria-label="Search products"
             className={styles.searchInput}
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
@@ -87,6 +88,7 @@ export default function ProductList({ initialProducts }) {
             <button
               key={cat.id}
               className={`${styles.tabButton} ${selectedCategory === cat.id ? styles.activeTab : ''}`}
+              aria-pressed={selectedCategory === cat.id}
               onClick={() => setSelectedCategory(cat.id)}
             >
               {cat.name}
@@ -100,14 +102,14 @@ export default function ProductList({ initialProducts }) {
         {filteredProducts.length > 0 ? (
           filteredProducts.map((product) => (
             <div key={product.id} className={styles.card}>
-              <div className={styles.imageWrapper} style={{ padding: '12px' }}>
+              <div className={styles.imageWrapper}>
                 {product.featured === 1 && <span className={styles.badge}>Featured</span>}
                 <Image
                   src={product.imageUrl || '/img/logo.png'}
                   alt={product.name}
                   fill
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 300px"
-                  style={{ objectFit: 'contain', padding: '12px' }}
+                  style={{ objectFit: 'contain' }}
                 />
               </div>
               <div className={styles.cardBody}>

@@ -14,12 +14,12 @@ export default function Home() {
           </div>
 
           <h1 className={styles.title}>
-            Diversified Excellence. <br />
-            <span className={`${styles.titleHighlight} text-gradient`}>Pioneering Premium Solutions.</span>
+            Premium Brands. <br />
+            <span className={`${styles.titleHighlight} text-gradient`}>Built on Trust.</span>
           </h1>
 
           <p className={styles.description}>
-            Itulah Nigeria Limited delivers premium spirits & beverages, fine fragrances, body sprays, and PULS nutrition supplements across the nation.
+            Explore Itulah&apos;s portfolio of premium beverages, fine fragrances, and PULS Nutrition for business and everyday life.
           </p>
 
           <div className={styles.ctas}>
@@ -58,8 +58,8 @@ export default function Home() {
                   <div className={styles.statLabel}>Years Legacy</div>
                 </div>
                 <div>
-                  <div className={styles.statNumber}>100%</div>
-                  <div className={styles.statLabel}>Satisfaction</div>
+                  <div className={styles.statNumber}>3</div>
+                  <div className={styles.statLabel}>Core Verticals</div>
                 </div>
               </div>
             </div>
@@ -137,6 +137,27 @@ export default function Home() {
                 </Link>
               </div>
             </div>
+
+            <div className={`${styles.divCard} glass-card`}>
+              <Image
+                src="/img/Nutrition.png"
+                alt="PULS Nutrition supplements"
+                fill
+                sizes="(max-width: 992px) 100vw, 33vw"
+                className={styles.cardBg}
+                style={{ objectFit: 'cover' }}
+              />
+              <div className={styles.cardGradient}></div>
+              <div className={styles.cardContent}>
+                <h3 className={styles.cardTitle}>PULS Nutrition</h3>
+                <p className={styles.cardDesc}>
+                  Sports nutrition and hydration products to support active lifestyles and performance goals.
+                </p>
+                <Link href="/products?cat=nutrition" className={styles.cardLink}>
+                  View Products &rarr;
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -182,7 +203,7 @@ export default function Home() {
               <p className={styles.bannerDesc}>
                 Premium nutritional supplements, shakes, and sports hydration gear distributed directly across Nigeria. Fuel your active days and achieve your fitness targets with clean ingredients.
               </p>
-              <Link href="/products?cat=supplements" className={styles.primaryCta}>
+              <Link href="/products?cat=nutrition" className={styles.primaryCta}>
                 See Supplements
               </Link>
             </div>

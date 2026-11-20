@@ -22,6 +22,7 @@ export default async function AdminDashboardPage() {
   let totalOrders = 0;
   let activeFeaturesCount = 0;
   let enquiries = [];
+  let dashboardError = '';
 
   try {
     totalProducts = db.prepare('SELECT COUNT(*) as count FROM products').get().count;
@@ -32,6 +33,7 @@ export default async function AdminDashboardPage() {
     enquiries = db.prepare('SELECT * FROM enquiries ORDER BY id DESC').all();
   } catch (err) {
     console.error("Database query failed on AdminDashboard mount:", err);
+    dashboardError = 'Dashboard data could not be loaded. Please try again or contact technical support.';
   }
 
   // Helper to resolve department tag style class
@@ -55,22 +57,14 @@ export default async function AdminDashboardPage() {
             Itulah Nigeria Limited CMS Manager
           </p>
         </div>
-        <Link href="/admin/features" style={{ textDecoration: 'none' }}>
-          <div style={{
-            background: 'linear-gradient(135deg, #0284c7 0%, #0369a1 100%)',
-            color: 'white',
-            padding: '10px 18px',
-            borderRadius: '10px',
-            fontSize: '14px',
-            fontWeight: '700',
-            display: 'flex',
-            alignItems: 'center',
-            gap: '8px'
-          }}>
+        <Link href="/admin/features" className={styles.featureButton}>
             ⚡ Feature Expansion Center ({activeFeaturesCount} Active)
-          </div>
         </Link>
       </div>
+
+      {dashboardError && (
+        <p className={styles.errorBanner} role="alert">{dashboardError}</p>
+      )}
 
       {/* Stats Overview */}
       <div className={styles.statsGrid}>

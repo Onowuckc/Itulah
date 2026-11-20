@@ -47,6 +47,7 @@
 }
 
 .logoFallback {
+  display: none;
   font-family: var(--font-heading);
   font-weight: 800;
   font-size: 26px;

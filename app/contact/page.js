@@ -91,8 +91,8 @@ export default function ContactPage() {
               Phone Numbers
             </h3>
             <div className={styles.blockText}>
-              <p>+234 807 963 5408</p>
-              <p>+234 812 449 1283</p>
+              <p><a href="tel:+2348079635408">+234 807 963 5408</a></p>
+              <p><a href="tel:+2348124491283">+234 812 449 1283</a></p>
             </div>
           </div>
 
@@ -104,7 +104,7 @@ export default function ContactPage() {
               Email Address
             </h3>
             <div className={styles.blockText}>
-              <p>Info@itulahng.com</p>
+              <p><a href="mailto:Info@itulahng.com">Info@itulahng.com</a></p>
             </div>
           </div>
         </div>
@@ -202,6 +202,14 @@ export default function ContactPage() {
           title="Itulah Nigeria Limited Office Location - Ogudu Phase 2"
         />
       </div>
+      <a
+        className={styles.mapLink}
+        href="https://www.google.com/maps/search/?api=1&query=Prince%20Adesoji%20Ajose%20Street%2C%20Ogudu%20Phase%202%2C%20Lagos%2C%20Nigeria"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Open in Google Maps
+      </a>
     </div>
   );
 }
